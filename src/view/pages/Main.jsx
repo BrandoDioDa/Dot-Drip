@@ -1,9 +1,9 @@
 const Main =() => {
     return(
        <div>
-           <h>
-               Main Menu
-           </h>
+           <h1>
+               Dot-Drip
+           </h1>
        </div>
     );
 }
