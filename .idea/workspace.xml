@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="" />
+    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/view/pages/Clothes.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/pages/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/pages/Signin.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/pages/itemDes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -235,16 +242,5 @@
     <MESSAGE value="Created a button for main page | Takes user to Cart" />
     <MESSAGE value="Nav Bar is created and displays on every page | added tailwind.js (Not in use)" />
     <option name="LAST_COMMIT_MESSAGE" value="Nav Bar is created and displays on every page | added tailwind.js (Not in use)" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/view/pages/Cart.jsx</url>
-          <line>3</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
