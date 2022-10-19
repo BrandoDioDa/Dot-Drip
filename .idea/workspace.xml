@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="Development" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="25-create-a-navigation-bar-css" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+        <option value="Development" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EjhSEteSQpSGifaCwyNug8t4MF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\src\Components" />
+      <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\src\view\cssDesign" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="renders learn react link" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/App.test.js" />
+      <test-names>
+        <test-name value="renders learn react link" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="build-css" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-css" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.renders learn react link" />
+        <item itemvalue="npm.build-css" />
+        <item itemvalue="Jest.renders learn react link" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="" />
+      <created>1663114899201</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663114899201</updated>
+      <workItem from="1663114900610" duration="869000" />
+      <workItem from="1663115790719" duration="179000" />
+      <workItem from="1663116126194" duration="641000" />
+      <workItem from="1663695895745" duration="4308000" />
+      <workItem from="1663720543147" duration="760000" />
+      <workItem from="1663814915899" duration="1993000" />
+      <workItem from="1663955795112" duration="1994000" />
+      <workItem from="1663989134199" duration="326000" />
+      <workItem from="1664039641201" duration="1845000" />
+      <workItem from="1664159128145" duration="6715000" />
+      <workItem from="1665019654448" duration="5277000" />
+      <workItem from="1665027626272" duration="218000" />
+      <workItem from="1665535987674" duration="305000" />
+      <workItem from="1665624145717" duration="7591000" />
+      <workItem from="1665710884762" duration="606000" />
+      <workItem from="1666035672785" duration="4028000" />
+      <workItem from="1666141576142" duration="1949000" />
+    </task>
+    <task id="LOCAL-00001" summary="messagwe">
+      <created>1663115835095</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663115835095</updated>
+    </task>
+    <task id="LOCAL-00002" summary="message">
+      <created>1663720701792</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663720701792</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Installed react-router-dom | changed app.js to allow routing to different pages | created directories to hold content for front-end | created shopping cart and main menu page">
+      <created>1664168973156</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664168973156</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Installed react-router-dom | changed app.js to allow routing to different pages | created directories to hold content for front-end | created shopping cart and main menu page | added NotFound.jsx">
+      <created>1664169888974</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664169888974</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Each page has an actual heading | Button on shopping cart page is created and works | css file styles the button">
+      <created>1665024395975</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665024395975</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added bootstrap dependency">
+      <created>1665024818906</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665024818906</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Created a button for main page | Takes user to Cart">
+      <created>1665025563393</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665025563393</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Nav Bar is created and displays on every page | added tailwind.js (Not in use)">
+      <created>1665632987813</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665632987813</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Nav Bar is created and displays on every page | added tailwind.js (Not in use)">
+      <created>1666146637062</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666146637062</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="messagwe" />
+    <MESSAGE value="message" />
+    <MESSAGE value="Installed react-router-dom | changed app.js to allow routing to different pages | created directories to hold content for front-end | created shopping cart and main menu page" />
+    <MESSAGE value="Installed react-router-dom | changed app.js to allow routing to different pages | created directories to hold content for front-end | created shopping cart and main menu page | added NotFound.jsx" />
+    <MESSAGE value="Each page has an actual heading | Button on shopping cart page is created and works | css file styles the button" />
+    <MESSAGE value="Added bootstrap dependency" />
+    <MESSAGE value="Created a button for main page | Takes user to Cart" />
+    <MESSAGE value="Nav Bar is created and displays on every page | added tailwind.js (Not in use)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nav Bar is created and displays on every page | added tailwind.js (Not in use)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/view/pages/Cart.jsx</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
