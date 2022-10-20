@@ -4,7 +4,7 @@ import "../cssDesign/main.css"
 const Main =() => {
     return(
         <div className="Bcolor">
-            <h1>
+            <h1 className="textColor">
                 Dot-Drip
             </h1>
             <Link to="/Cart">

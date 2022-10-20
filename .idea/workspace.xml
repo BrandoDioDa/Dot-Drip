@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/navBar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/cssDesign/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/cssDesign/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/pages/Main.jsx" afterDir="false" />
     </list>
@@ -148,7 +149,7 @@
       <workItem from="1665710884762" duration="606000" />
       <workItem from="1666035672785" duration="4028000" />
       <workItem from="1666141576142" duration="1949000" />
-      <workItem from="1666231484369" duration="604000" />
+      <workItem from="1666231484369" duration="1924000" />
     </task>
     <task id="LOCAL-00001" summary="messagwe">
       <created>1663115835095</created>
@@ -220,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666150669691</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added background color by adding a css function in the main.css file. It applies to all pages backgrounds.">
+      <created>1666232418523</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666232418523</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +255,7 @@
     <MESSAGE value="Created a button for main page | Takes user to Cart" />
     <MESSAGE value="Nav Bar is created and displays on every page | added tailwind.js (Not in use)" />
     <MESSAGE value="Added more necessary pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more necessary pages" />
+    <MESSAGE value="Added background color by adding a css function in the main.css file. It applies to all pages backgrounds." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added background color by adding a css function in the main.css file. It applies to all pages backgrounds." />
   </component>
 </project>
