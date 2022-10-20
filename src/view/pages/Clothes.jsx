@@ -3,7 +3,7 @@ import React from "react";
 import "../cssDesign/main.css"
 const Clothes =() => {
     return(
-        <div>
+        <div className="Bcolor">
             <h1>
                 Clothes
             </h1>

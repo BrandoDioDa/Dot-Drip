@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/view/pages/Clothes.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/pages/Login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/pages/Signin.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/pages/itemDes.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/cssDesign/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/cssDesign/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/pages/Main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +148,7 @@
       <workItem from="1665710884762" duration="606000" />
       <workItem from="1666035672785" duration="4028000" />
       <workItem from="1666141576142" duration="1949000" />
+      <workItem from="1666231484369" duration="604000" />
     </task>
     <task id="LOCAL-00001" summary="messagwe">
       <created>1663115835095</created>
@@ -215,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666146637062</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added more necessary pages">
+      <created>1666150669691</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666150669691</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +246,7 @@
     <MESSAGE value="Added bootstrap dependency" />
     <MESSAGE value="Created a button for main page | Takes user to Cart" />
     <MESSAGE value="Nav Bar is created and displays on every page | added tailwind.js (Not in use)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nav Bar is created and displays on every page | added tailwind.js (Not in use)" />
+    <MESSAGE value="Added more necessary pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more necessary pages" />
   </component>
 </project>

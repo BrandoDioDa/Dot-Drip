@@ -3,7 +3,7 @@ import React from "react";
 import "../cssDesign/main.css"
 const Main =() => {
     return(
-        <div>
+        <div className="Bcolor">
             <h1>
                 Dot-Drip
             </h1>

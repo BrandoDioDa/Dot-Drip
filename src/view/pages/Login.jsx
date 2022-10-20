@@ -3,7 +3,7 @@ import React from "react";
 import "../cssDesign/main.css"
 const Login =() => {
     return(
-        <div>
+        <div className="Bcolor">
             <h1>
                 Login Page
             </h1>

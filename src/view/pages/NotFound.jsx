@@ -1,6 +1,6 @@
 const NotFound =() => {
     return (
-        <div>
+        <div className="Bcolor">
             <h1>
                 404: Page Not Found
             </h1>

@@ -3,7 +3,7 @@ import React from "react";
 import "../cssDesign/main.css"
 const Signin =() => {
     return(
-        <div>
+        <div className="Bcolor">
             <h1>
                 Sign in
             </h1>
