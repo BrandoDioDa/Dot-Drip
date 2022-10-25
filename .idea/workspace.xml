@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="">
+    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="Added Text Color Navy Blue For Css function || Modified navbar with new font boldness, color, and navigation || Logo where &quot;Navbar&quot; is takes user to home screen">
+      <change afterPath="$PROJECT_DIR$/src/view/images/prototype_Logo.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/navBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/pages/NotFound.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/pages/NotFound.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +78,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\src\view\images" />
       <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\src\Components" />
       <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\src\view\cssDesign" />
     </key>
@@ -148,6 +152,10 @@
       <workItem from="1666141576142" duration="1949000" />
       <workItem from="1666231484369" duration="2341000" />
       <workItem from="1666235809137" duration="51000" />
+      <workItem from="1666298796172" duration="1510000" />
+      <workItem from="1666301204565" duration="1264000" />
+      <workItem from="1666581970247" duration="764000" />
+      <workItem from="1666728192878" duration="4945000" />
     </task>
     <task id="LOCAL-00001" summary="messagwe">
       <created>1663115835095</created>
@@ -233,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666233632158</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added Text Color Navy Blue For Css function || Modified navbar with new font boldness, color, and navigation || Logo where &quot;Navbar&quot; is takes user to home screen">
+      <created>1666298987289</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666298987289</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
