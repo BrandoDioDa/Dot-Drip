@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MongoDB - @cluster0.ijjeni9.mongodb.net">
+  <database-model serializer="dbm" dbms="UNKNOWN" family-id="UNKNOWN" format-version="4.32">
+    <root id="1">
+      <DefaultCasing>mixed/mixed</DefaultCasing>
+      <ServerVersion>0.0</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="Mongo">
+      <Current>1</Current>
+    </database>
+    <schema id="3" parent="2" name="test">
+      <Current>1</Current>
+    </schema>
+  </database-model>
+</dataSource>
