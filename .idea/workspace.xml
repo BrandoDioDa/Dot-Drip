@@ -4,88 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="Seperated Front-end and Back-end | installed nodemon | installed concurrently | installed mongoose |">
-      <change afterPath="$PROJECT_DIR$/Back-End/node_modules/.package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/dist/output.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/Components/navBar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/setupTests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/cssDesign/cart.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/cssDesign/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/cssDesign/navBar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/images/Raindrop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Cart.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Clothes.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Main.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/pages/NotFound.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Signin.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.073c9b0a.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.073c9b0a.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/787.cd7d7d7f.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/787.cd7d7d7f.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.448939ff.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.448939ff.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.448939ff.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/output.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/navBar.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/cssDesign/cart.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/cssDesign/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/cssDesign/navBar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/images/prototype_Logo.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/pages/Cart.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/pages/Clothes.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/pages/Login.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/pages/Main.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/pages/NotFound.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/pages/Signin.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" />
-    </list>
+    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="Seperated Front-end and Back-end | installed nodemon | installed concurrently | installed mongoose |" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,6 +38,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
@@ -127,22 +47,6 @@
         <option value="Development" />
       </list>
     </option>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Front-End/src/Components/navBar.jsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Front-End/src/view/pages/Login.jsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Front-End/src/App.css" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Front-End/src/index.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Front-End/src/App.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Front-End/package.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Front-End/src/view/cssDesign/cart.css" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Front-End/src/view/pages/Main.jsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Front-End/src/view/pages/Cart.jsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Front-End/public/index.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Back-End/server.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Front-End/src/view/pages/NotFound.jsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Front-End/src/view/cssDesign/main.css" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Front-End/src/view/pages/Signin.jsx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -179,7 +83,7 @@
       <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\src\view\images" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start (1)">
+  <component name="RunManager" selected="npm.start">
     <configuration name="server.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Back-End/server.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
