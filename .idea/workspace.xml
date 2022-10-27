@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="Added Text Color Navy Blue For Css function || Modified navbar with new font boldness, color, and navigation || Logo where &quot;Navbar&quot; is takes user to home screen">
-      <change afterPath="$PROJECT_DIR$/src/view/images/prototype_Logo.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/navBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/pages/NotFound.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/pages/NotFound.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="Seperated Front-end and Back-end | installed nodemon | installed concurrently | installed mongoose |" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +25,7 @@
             <value>
               <list>
                 <branch-info repo="$PROJECT_DIR$" source="Development" />
+                <branch-info repo="$PROJECT_DIR$" source="43-seperate-the-front-end-and-backend" />
               </list>
             </value>
           </entry>
@@ -38,10 +34,11 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="25-create-a-navigation-bar-css" />
+        <entry key="$PROJECT_DIR$" value="43-seperate-the-front-end-and-backend" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
@@ -62,9 +59,9 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mongo" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -74,34 +71,27 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\Back-End" />
+      <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\Front-end" />
+      <recent name="C:\Coding Projects\Personal Lab\Front-End" />
+      <recent name="C:\Coding Projects\Personal Labs\Dot-Drip" />
       <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\src\view\images" />
-      <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\src\Components" />
-      <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\src\view\cssDesign" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
-    <configuration name="renders learn react link" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/App.test.js" />
-      <test-names>
-        <test-name value="renders learn react link" />
-      </test-names>
+  <component name="RunManager" selected="npm.start (1)">
+    <configuration name="server.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Back-End/server.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="build-css" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
+    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/Front-End/package.json" />
       <command value="run" />
       <scripts>
-        <script value="build-css" />
+        <script value="start" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -117,11 +107,14 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Node.js.server.js" />
+      <item itemvalue="npm.start" />
+      <item itemvalue="npm.start (1)" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.renders learn react link" />
-        <item itemvalue="npm.build-css" />
-        <item itemvalue="Jest.renders learn react link" />
+        <item itemvalue="npm.start (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +148,11 @@
       <workItem from="1666298796172" duration="1510000" />
       <workItem from="1666301204565" duration="1264000" />
       <workItem from="1666581970247" duration="764000" />
-      <workItem from="1666728192878" duration="4945000" />
+      <workItem from="1666728192878" duration="8280000" />
+      <workItem from="1666810134515" duration="1300000" />
+      <workItem from="1666811800057" duration="7205000" />
+      <workItem from="1666827973115" duration="2586000" />
+      <workItem from="1666831771033" duration="2371000" />
     </task>
     <task id="LOCAL-00001" summary="messagwe">
       <created>1663115835095</created>
@@ -248,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666298987289</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added a login and sign-up button to navbar | Links to correct pages | modified the navbar to keep up with 5.0 bootstrap | Added prototype logo in images">
+      <created>1666735452556</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1666735452556</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +281,19 @@
     <MESSAGE value="Added more necessary pages" />
     <MESSAGE value="Added background color by adding a css function in the main.css file. It applies to all pages backgrounds." />
     <MESSAGE value="Added Text Color Navy Blue For Css function || Modified navbar with new font boldness, color, and navigation || Logo where &quot;Navbar&quot; is takes user to home screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Text Color Navy Blue For Css function || Modified navbar with new font boldness, color, and navigation || Logo where &quot;Navbar&quot; is takes user to home screen" />
+    <MESSAGE value="Added a login and sign-up button to navbar | Links to correct pages | modified the navbar to keep up with 5.0 bootstrap | Added prototype logo in images" />
+    <MESSAGE value="Seperated Front-end and Back-end | installed nodemon | installed concurrently | installed mongoose |" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seperated Front-end and Back-end | installed nodemon | installed concurrently | installed mongoose |" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Front-End/src/Components/navBar.jsx</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
