@@ -1,5 +1,6 @@
 const express = require('express');
-let mongoose = require('mongoose');
+const mongoose = require('mongoose');
+const productModel = require("./models/products");
 const app = express();
 
 const PORT = process.env.PORT || 4000; //Environment variable port or port 4000
@@ -21,5 +22,12 @@ try {
 app.listen(PORT, function(err){
     if (err) console.log("Error in server setup")
     console.log("Server listening on Port", PORT);
+});
+
+app.get("/insert", (req, res) =>{
+    productModel.prodName = "test";
+    productModel.prodType = "Type";
+    productModel.price = "$12223";
+
 })
 

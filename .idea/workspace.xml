@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Back-End/models/products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/routes/Products.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/models/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/models/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/routes/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/routes/Products.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Back-End/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,6 +165,11 @@
       <workItem from="1667344029462" duration="2897000" />
       <workItem from="1667696540368" duration="4567000" />
       <workItem from="1667702611019" duration="2580000" />
+      <workItem from="1667707735505" duration="84000" />
+      <workItem from="1667942086550" duration="36000" />
+      <workItem from="1667966841172" duration="14000" />
+      <workItem from="1667967834567" duration="597000" />
+      <workItem from="1668025817100" duration="4616000" />
     </task>
     <task id="LOCAL-00001" summary="messagwe">
       <created>1663115835095</created>
@@ -287,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667350040430</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Creating the models and routes for the database.">
+      <created>1667707787574</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1667707787574</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +329,8 @@
     <MESSAGE value="Added a login and sign-up button to navbar | Links to correct pages | modified the navbar to keep up with 5.0 bootstrap | Added prototype logo in images" />
     <MESSAGE value="Seperated Front-end and Back-end | installed nodemon | installed concurrently | installed mongoose |" />
     <MESSAGE value="Front-end and Back-end run together" />
-    <option name="LAST_COMMIT_MESSAGE" value="Front-end and Back-end run together" />
+    <MESSAGE value="Creating the models and routes for the database." />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating the models and routes for the database." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
