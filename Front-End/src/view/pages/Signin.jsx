@@ -1,18 +1,35 @@
 import {Link} from "react-router-dom";
-import React from "react";
-import "../cssDesign/main.css"
-const Signin =() => {
+import React, {useState} from "react"
+import "../../App.css"
+
+const Signin = (props) => {
+    const [user, Username] = useState('');
+    const [repass, reenterpass] = useState('');
+    const [pass, setPass] = useState('');
+
+const handleSubmit = (e) => {
+    e.preventDefault();
+}
+
     return(
-        <div className="Bcolor">
-            <h1>
-                Sign in
-            </h1>
-            <Link to="/">
-                <button type="button" className="button">
-                    Home Page
-                </button>
-            </Link>
-        </div>
+        <div className="App">
+            <div className="auth-form-conatiner">
+       <form className="Signin-form" onSubmit={handleSubmit}>
+
+        <label htmlFor="Username">Username</label>
+        <input value={user} onChange={(e) => Username(e.target.value)} type="Username" placeholder="Username" id="Username" name="Username" />
+
+        <label htmlFor="Password">Password</label>
+        <input value={pass} onChange={(e) => setPass(e.target.value)} type="Password" placeholder="Password" id="Password" name="Password" />
+
+        <label htmlFor="Re-Enter Password">Re-Enter Password</label>
+        <input value={repass} onChange={(e) => reenterpass(e.target.value)} type="Re-Enter Password" placeholder="Re-Enter Password" id="Re-Enter Password" name="Re-Enter Password" />
+
+        <button>Register</button>
+       </form>
+       <Link to={"/Login"}><button className="link-btn">Already have an account? Login Here.</button></Link>
+       </div>
+       </div>
     );
 }
 
