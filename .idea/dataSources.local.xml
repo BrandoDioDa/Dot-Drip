@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="WS-213.7172.31">
-    <data-source name="MongoDB - @cluster0.ijjeni9.mongodb.net" uuid="a3fe13d8-caad-44f0-833e-83d9bd62faa7">
+    <data-source name="@cluster.tmn3tfw.mongodb.net" uuid="eea05c1c-50f5-4431-b4ec-d93983ae97b7">
       <database-info product="Mongo DB" version="" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.16" dbms="UNKNOWN" exact-version="0" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
       <user-name>BrandoDioDa</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node negative="1">
-            <node kind="database" qname="Mongo">
-              <node kind="schema" negative="1" />
-            </node>
-            <node kind="database" qname="">
-              <node kind="schema" qname="test" />
-            </node>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
           </node>
         </introspection-scope>
       </schema-mapping>
