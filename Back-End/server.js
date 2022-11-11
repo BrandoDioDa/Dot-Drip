@@ -24,10 +24,5 @@ app.listen(PORT, function(err){
     console.log("Server listening on Port", PORT);
 });
 
-app.get("/insert", (req, res) =>{
-    productModel.prodName = "test";
-    productModel.prodType = "Type";
-    productModel.price = "$12223";
 
-})
 
