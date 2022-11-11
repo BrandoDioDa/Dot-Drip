@@ -9,6 +9,7 @@ import Signin from "./view/pages/Signin";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
+
     return (
         <BrowserRouter>
             <NavBar/>
