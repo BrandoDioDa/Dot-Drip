@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="Seperated Front-end and Back-end | installed nodemon | installed concurrently | installed mongoose |" />
+    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -83,8 +86,18 @@
       <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\src\view\images" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start (1)">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="server.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Back-End/server.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/Back-End/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -97,19 +110,9 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Node.js.server.js" />
-      <item itemvalue="npm.start" />
+      <item itemvalue="npm.dev" />
       <item itemvalue="npm.start (1)" />
     </list>
     <recent_temporary>
@@ -153,6 +156,17 @@
       <workItem from="1666811800057" duration="7205000" />
       <workItem from="1666827973115" duration="2586000" />
       <workItem from="1666831771033" duration="2371000" />
+      <workItem from="1667020800705" duration="608000" />
+      <workItem from="1667184979355" duration="4360000" />
+      <workItem from="1667326334899" duration="4473000" />
+      <workItem from="1667344029462" duration="2897000" />
+      <workItem from="1667696540368" duration="4567000" />
+      <workItem from="1667702611019" duration="2580000" />
+      <workItem from="1667707735505" duration="84000" />
+      <workItem from="1667942086550" duration="36000" />
+      <workItem from="1667966841172" duration="14000" />
+      <workItem from="1667967834567" duration="597000" />
+      <workItem from="1668025817100" duration="6051000" />
     </task>
     <task id="LOCAL-00001" summary="messagwe">
       <created>1663115835095</created>
@@ -252,7 +266,42 @@
       <option name="project" value="LOCAL" />
       <updated>1666735452556</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Seperated Front-end and Back-end | installed nodemon | installed concurrently | installed mongoose |">
+      <created>1666835361617</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666835361618</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Seperated Front-end and Back-end | installed nodemon | installed concurrently | installed mongoose |">
+      <created>1666835499089</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1666835499089</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Front-end and Back-end run together">
+      <created>1667350040430</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1667350040430</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Creating the models and routes for the database.">
+      <created>1667707787574</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1667707787574</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Creating the models and routes for the database.">
+      <created>1668041034239</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1668041034239</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +332,9 @@
     <MESSAGE value="Added Text Color Navy Blue For Css function || Modified navbar with new font boldness, color, and navigation || Logo where &quot;Navbar&quot; is takes user to home screen" />
     <MESSAGE value="Added a login and sign-up button to navbar | Links to correct pages | modified the navbar to keep up with 5.0 bootstrap | Added prototype logo in images" />
     <MESSAGE value="Seperated Front-end and Back-end | installed nodemon | installed concurrently | installed mongoose |" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seperated Front-end and Back-end | installed nodemon | installed concurrently | installed mongoose |" />
+    <MESSAGE value="Front-end and Back-end run together" />
+    <MESSAGE value="Creating the models and routes for the database." />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating the models and routes for the database." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
