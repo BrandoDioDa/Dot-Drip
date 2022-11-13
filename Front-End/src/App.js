@@ -9,17 +9,16 @@ import Signin from "./view/pages/Signin";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
-
     return (
         <BrowserRouter>
             <NavBar/>
             <Routes>
-                <Route path="/" element={<Main/>} />            //Routes to main page
-                <Route path="/Cart" element={<Cart/>} />        //Routes to cart page
-                <Route path="/Clothes" element={<Clothes/>} />  //Routes to the clothes page
+                <Route path="/" element={<Main/>} />
+                <Route path="/Cart" element={<Cart/>} />
+                <Route path="/Clothes" element={<Clothes/>} />
                 <Route path="/Login" element={<Login/>} />
                 <Route path="/Signin" element={<Signin/>} />
-                <Route path="*" element={<NotFound/>} />        //An unknown route will take you to 404
+                <Route path="*" element={<NotFound/>} />
             </Routes>
         </BrowserRouter>
     );
