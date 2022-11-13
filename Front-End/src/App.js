@@ -6,6 +6,7 @@ import NotFound from "./view/pages/NotFound";
 import NavBar from "./Components/navBar";
 import Login from "./view/pages/Login";
 import Signin from "./view/pages/Signin";
+import Admin from "./view/pages/Admin"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
             <NavBar/>
             <Routes>
                 <Route path="/" element={<Main/>} />
+                <Route path="/Admin" element={<Admin/>} />
                 <Route path="/Cart" element={<Cart/>} />
                 <Route path="/Clothes" element={<Clothes/>} />
                 <Route path="/Login" element={<Login/>} />
