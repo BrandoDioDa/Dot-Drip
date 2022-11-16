@@ -1,22 +1,23 @@
 const express = require('express');
+const cors = require('cors');
 const mongoose = require('mongoose');
-const productModel = require("./models/products");
-const app = express();
+require('dotenv').config();
 
+const app = express();
 const PORT = process.env.PORT || 4000; //Environment variable port or port 4000
 
-const mongoAtlasUri = "mongodb+srv://BrandoDioDa:<password>@cluster.tmn3tfw.mongodb.net/?retryWrites=true&w=majority";
-try {
-    // Connect to the MongoDB cluster
-    mongoose.connect(
-        mongoAtlasUri,
-        { useNewUrlParser: true, useUnifiedTopology: true },
-        () => console.log("Mongoose is connected")
-    );
+//Connects to database
+mongoose
+    .connect(process.env.MONG_URI, { useNewUrlParser: true })
+    .then((r) => console.log(`MongoDB Atlas Connected`))
+    .catch((error) => console.log(error));
 
-} catch (e) {
-    console.log("could not connect");
-}
+mongoose.Promise = global.Promise;
+
+app.use(express.json());
+
+app.use("/Products", require("./routes/record"));
+
 
 // application listens for server launch
 app.listen(PORT, function(err){

@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/cssDesign/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/model/products.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/routes/record.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front-End/services/productsService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/view/cssDesign/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/cssDesign/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Admin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Admin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/models/products.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/routes/Products.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -173,7 +178,11 @@
       <workItem from="1667966841172" duration="14000" />
       <workItem from="1667967834567" duration="597000" />
       <workItem from="1668025817100" duration="6051000" />
-      <workItem from="1668299099200" duration="6283000" />
+      <workItem from="1668299099200" duration="6407000" />
+      <workItem from="1668393358883" duration="2145000" />
+      <workItem from="1668535615589" duration="1728000" />
+      <workItem from="1668538956881" duration="12439000" />
+      <workItem from="1668571929182" duration="1199000" />
     </task>
     <task id="LOCAL-00001" summary="messagwe">
       <created>1663115835095</created>
@@ -322,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668299388996</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="admin page construction in progress.">
+      <created>1668307812887</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1668307812887</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,6 +373,7 @@
     <MESSAGE value="Creating the models and routes for the database." />
     <MESSAGE value="Created admin page Admin.jsx" />
     <MESSAGE value="got rid of comments causing warning" />
-    <option name="LAST_COMMIT_MESSAGE" value="got rid of comments causing warning" />
+    <MESSAGE value="admin page construction in progress." />
+    <option name="LAST_COMMIT_MESSAGE" value="admin page construction in progress." />
   </component>
 </project>
