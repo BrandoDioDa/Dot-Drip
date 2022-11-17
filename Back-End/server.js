@@ -16,8 +16,12 @@ mongoose.Promise = global.Promise;
 
 app.use(express.json());
 
-app.use("/Products", require("./routes/record"));
+app.use("/api/Products", require("./routes/record"));
 
+app.use((err, req, res, next) => {
+    console.log(err);
+    next();
+})
 
 // application listens for server launch
 app.listen(PORT, function(err){

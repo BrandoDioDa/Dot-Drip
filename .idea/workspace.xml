@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Back-End/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front-End/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/services/productsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/services/productsService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,11 +86,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Coding Projects\Personal_Labs\Dot-Drip\Front-End" />
       <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\Back-End" />
       <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\Front-end" />
       <recent name="C:\Coding Projects\Personal Lab\Front-End" />
       <recent name="C:\Coding Projects\Personal Labs\Dot-Drip" />
-      <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\src\view\images" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -173,7 +179,9 @@
       <workItem from="1668393358883" duration="2145000" />
       <workItem from="1668535615589" duration="1728000" />
       <workItem from="1668538956881" duration="12439000" />
-      <workItem from="1668571929182" duration="2035000" />
+      <workItem from="1668571929182" duration="2273000" />
+      <workItem from="1668667825801" duration="2863000" />
+      <workItem from="1668705805450" duration="1197000" />
     </task>
     <task id="LOCAL-00001" summary="messagwe">
       <created>1663115835095</created>
@@ -336,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668573335534</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Updated the server to communicate with the cluster directly | Updated the Schema for products.js | Updated record.js to get all items for products | created a services' folder in the front-end that allows the front-end to communicate to the database | Installed some dependencies for QOL">
+      <created>1668579513490</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1668579513490</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
