@@ -13,6 +13,7 @@ expressRouter.get('/', async (req, res) => {
     }
 })
 
+//Get item by product id
 expressRouter.get('/product/:id', async (req, res) => {
     const { id } = req.params;
     const singleProduct = await product.findById(id);
@@ -20,6 +21,27 @@ expressRouter.get('/product/:id', async (req, res) => {
         return res.status(200).json(singleProduct)
     } catch (error) {
         return res.status(500).json({message: "Unable to get product"});
+    }
+})
+
+//ADDS a product to the database
+expressRouter.post('/product/add', async (req, res) => {
+    const createProduct = await product.create(req.body)
+    try {
+        return res.status(201).json(createProduct);
+    } catch (error) {
+        return res.status(500).json({message: "Unable to create product"});
+    }
+})
+
+//DELETE by product id
+expressRouter.delete('/product/delete/:id', async (req, res) => {
+    const { id } = req.params;
+    await product.findByIdAndDelete(id);
+    try {
+        return res.status(203).json({message: "Product successfully deleted"})
+    } catch (error) {
+        return res.status(500).json({message: "Unable to delete product"});
     }
 })
 module.exports = expressRouter;
