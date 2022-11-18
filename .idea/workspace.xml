@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Front-End/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/services/productsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/services/productsService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/routes/record.js" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/routes/record.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,6 +177,8 @@
       <workItem from="1668571929182" duration="2273000" />
       <workItem from="1668667825801" duration="2863000" />
       <workItem from="1668705805450" duration="1197000" />
+      <workItem from="1668716188753" duration="322000" />
+      <workItem from="1668727933826" duration="3614000" />
     </task>
     <task id="LOCAL-00001" summary="messagwe">
       <created>1663115835095</created>
@@ -351,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668579513490</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Set up the middleware for the front-end and the back-end | Database contents can now be seen and quality of life was added">
+      <created>1668716476149</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1668716476149</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,6 +392,7 @@
     <MESSAGE value="got rid of comments causing warning" />
     <MESSAGE value="admin page construction in progress." />
     <MESSAGE value="Updated the server to communicate with the cluster directly | Updated the Schema for products.js | Updated record.js to get all items for products | created a services' folder in the front-end that allows the front-end to communicate to the database | Installed some dependencies for QOL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the server to communicate with the cluster directly | Updated the Schema for products.js | Updated record.js to get all items for products | created a services' folder in the front-end that allows the front-end to communicate to the database | Installed some dependencies for QOL" />
+    <MESSAGE value="Set up the middleware for the front-end and the back-end | Database contents can now be seen and quality of life was added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set up the middleware for the front-end and the back-end | Database contents can now be seen and quality of life was added" />
   </component>
 </project>
