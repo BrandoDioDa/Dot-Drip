@@ -18,6 +18,8 @@ mongoose.Promise = global.Promise;
 //app.use(express.json());
 
 app.use("/api/Products", require("./routes/record"));
+app.use("/api/Products/Shirts", require("./routes/record"));
+
 
 app.use((err, req, res, next) => {
     console.log(err);
@@ -29,6 +31,3 @@ app.listen(PORT, function(err){
     if (err) console.log("Error in server setup")
     console.log("Server listening on Port", PORT);
 });
-
-
-
