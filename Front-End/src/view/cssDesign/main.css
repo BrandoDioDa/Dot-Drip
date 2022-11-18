@@ -36,3 +36,19 @@
     width: 200px;
     height: 60px;
 }
+
+.ProductCard{
+    color: brown;
+    background-color: aqua;
+    width: 30%;
+    position:relative;
+    left:40%;
+
+    border-radius:10px;
+    border-style:dashed;
+    padding:10px;
+}
+
+img {  
+    object-fit: cover;  
+}  
