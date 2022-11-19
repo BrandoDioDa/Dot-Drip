@@ -19,7 +19,6 @@ function App() {
                 <Route path="/Cart" element={<Cart/>} />
                 <Route path="/Clothes" element={<Clothes/>} />
                 <Route path="/Login" element={<Login/>} />
-               
                 <Route path="/Signin" element={<Signin/>} />
                 <Route path="*" element={<NotFound/>} />
             </Routes>
