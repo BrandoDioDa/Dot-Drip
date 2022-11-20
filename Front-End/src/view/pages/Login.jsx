@@ -1,17 +1,31 @@
 import {Link} from "react-router-dom";
-import React from "react";
-import "../cssDesign/main.css"
-const Login =() => {
+import React, { useState } from "react";
+import "../../App.css"
+
+const Login =(props) => {
+    const [user, Username] = useState(' ');
+    const[password, setPass] = useState(' ');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+}
+    
     return(
-        <div className="Bcolor">
-            <h1>
-                Login Page
-            </h1>
-            <Link to="/">
-                <button type="button" className="button">
-                    Home Page
-                </button>
+        <div className="App">
+            <div className="auth-form-conatiner">
+        <form className="Login-form" onSubmit={handleSubmit}>
+
+                <label for="Username">Username</label>
+                <input value={user} onChange={(e) => Username(e.target.value)} type="username" placeholder="username" id="username" name="username" />
+
+                <label for="password">Password</label>
+                <input value={password} onChange={(e) => setPass(e.target.value)} type="password" placeholder="**********" id="password" name="password"></input>
+            <button>Log in</button>
+        </form>
+            <Link to={"/Signin"}>
+                <button className="link-btn">Don't have an account? Sign in Here.</button>
             </Link>
+        </div>
         </div>
     );
 }
