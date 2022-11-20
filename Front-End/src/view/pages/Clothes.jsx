@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import "../cssDesign/main.css"
-import "../cssDesign/product.css"
+//import "../cssDesign/product.css"
 import ProductCard from "../../Components/ProductCard";
 import useAxiosGet from "../../Hooks/HttpRequests"
 
