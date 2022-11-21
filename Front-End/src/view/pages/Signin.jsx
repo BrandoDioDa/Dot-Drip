@@ -9,6 +9,7 @@ const Signin = (props) => {
 
 const handleSubmit = (e) => {
     e.preventDefault();
+    alert(user);
 }
 
     return(
@@ -25,7 +26,7 @@ const handleSubmit = (e) => {
         <label htmlFor="Re-Enter Password">Re-Enter Password</label>
         <input value={repass} onChange={(e) => reenterpass(e.target.value)} type="Re-Enter Password" placeholder="Re-Enter Password" id="Re-Enter Password" name="Re-Enter Password" />
 
-        <button>Register</button>
+        <button onClick={handleSubmit}>Register</button>
        </form>
        <Link to={"/Login"}><button className="link-btn">Already have an account? Login Here.</button></Link>
        </div>

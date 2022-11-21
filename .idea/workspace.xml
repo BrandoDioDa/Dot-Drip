@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Back-End/model/checkout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/model/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/routes/Checkout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/routes/Users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/routes/record.js" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/routes/record.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/routes/record.js" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/routes/Products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Clothes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Clothes.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +189,8 @@
       <workItem from="1668705805450" duration="1197000" />
       <workItem from="1668716188753" duration="322000" />
       <workItem from="1668727933826" duration="7548000" />
-      <workItem from="1668806871472" duration="784000" />
+      <workItem from="1668806871472" duration="1784000" />
+      <workItem from="1668893646324" duration="9782000" />
     </task>
     <task id="LOCAL-00001" summary="messagwe">
       <created>1663115835095</created>
@@ -363,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668748666162</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Created more record functions to manipulate the database | .post and .put are still under development.">
+      <created>1668807787673</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1668807787673</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,6 +420,7 @@
     <MESSAGE value="Updated the server to communicate with the cluster directly | Updated the Schema for products.js | Updated record.js to get all items for products | created a services' folder in the front-end that allows the front-end to communicate to the database | Installed some dependencies for QOL" />
     <MESSAGE value="Set up the middleware for the front-end and the back-end | Database contents can now be seen and quality of life was added" />
     <MESSAGE value="back-end can retrieve product by objectId" />
-    <option name="LAST_COMMIT_MESSAGE" value="back-end can retrieve product by objectId" />
+    <MESSAGE value="Created more record functions to manipulate the database | .post and .put are still under development." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created more record functions to manipulate the database | .post and .put are still under development." />
   </component>
 </project>

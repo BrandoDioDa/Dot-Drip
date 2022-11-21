@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const { model, Schema } = mongoose;
 
-const prodType = Schema ({
+const prodList = Schema ({
     prodType: {
         type: String,
         required: true
@@ -29,4 +29,4 @@ const prodType = Schema ({
     }
 });
 
-module.exports = model('prodType', prodType);
+module.exports = model('prodList', prodList);
