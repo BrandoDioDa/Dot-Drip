@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Back-End/model/checkout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/model/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/routes/Checkout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/routes/Users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Dot-Drip.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Dot-Drip.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/routes/record.js" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/routes/Products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Clothes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Clothes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Admin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Admin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Login.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +184,9 @@
       <workItem from="1668716188753" duration="322000" />
       <workItem from="1668727933826" duration="7548000" />
       <workItem from="1668806871472" duration="1784000" />
-      <workItem from="1668893646324" duration="9782000" />
+      <workItem from="1668893646324" duration="10827000" />
+      <workItem from="1669004168307" duration="907000" />
+      <workItem from="1669140571474" duration="4883000" />
     </task>
     <task id="LOCAL-00001" summary="messagwe">
       <created>1663115835095</created>
@@ -381,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668807787673</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="created connections to the users and checkout databases that we need | Functions created to delete and get information | THE ADDING FUNCTION IS STILL UNDER DEVELOPMENT">
+      <created>1668908069188</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1668908069188</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,6 +424,19 @@
     <MESSAGE value="Set up the middleware for the front-end and the back-end | Database contents can now be seen and quality of life was added" />
     <MESSAGE value="back-end can retrieve product by objectId" />
     <MESSAGE value="Created more record functions to manipulate the database | .post and .put are still under development." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created more record functions to manipulate the database | .post and .put are still under development." />
+    <MESSAGE value="created connections to the users and checkout databases that we need | Functions created to delete and get information | THE ADDING FUNCTION IS STILL UNDER DEVELOPMENT" />
+    <option name="LAST_COMMIT_MESSAGE" value="created connections to the users and checkout databases that we need | Functions created to delete and get information | THE ADDING FUNCTION IS STILL UNDER DEVELOPMENT" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Back-End/model/users.js</url>
+          <line>27</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
