@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "../../App.css"
 import useAxiosGet from "../../Hooks/HttpRequests";
 
-const Login =(props) => {
+const Login =( props ) => {
     const [user, Username] = useState(' ');
     const[password, setPass] = useState(' ');
 
@@ -23,11 +23,11 @@ const Login =(props) => {
             <div className="auth-form-conatiner">
         <form className="Login-form" onSubmit={handleSubmit}>
 
-                <label for="Username">Username</label>
-                <input value={user} onChange={(e) => Username(e.target.value)} type="username" placeholder="username" id="username" name="username" />
+                <label form="Username">Username</label>
+                <input value={user} onChange={(e) => Username(e.target.value)} type="username" placeholder="username" id="username" name="username"/>
 
-                <label for="password">Password</label>
-                <input value={password} onChange={(e) => setPass(e.target.value)} type="password" placeholder="**********" id="password" name="password"></input>
+                <label form="password">Password</label>
+                <input value={password} onChange={(e) => setPass(e.target.value)} type="password" placeholder="**********" id="password" name="password"/>
             <button>Log in</button>
         </form>
             <Link to={"/Signin"}>
