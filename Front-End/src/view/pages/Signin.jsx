@@ -11,8 +11,6 @@ const Signin = (props) => {
 
     const HandleSubmit = (e) => {
         e.preventDefault();
-        // Post the information to the thingy
-
     }
 
     return(
