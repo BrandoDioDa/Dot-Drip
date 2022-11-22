@@ -31,7 +31,6 @@ const useAxiosGet = (url) => {
                 })
             })
     }, [url])
-
     return products
 }
 

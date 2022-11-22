@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import React, { useState } from "react";
 import "../../App.css"
+import useAxiosGet from "../../Hooks/HttpRequests";
 
 const Login =(props) => {
     const [user, Username] = useState(' ');
@@ -8,7 +9,14 @@ const Login =(props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-}
+    }
+
+    async function GrabUser(url) {
+        let response = await useAxiosGet(url);
+        if ( response.data ) {
+            console.log("Data found");
+        }
+    }
     
     return(
         <div className="App">
