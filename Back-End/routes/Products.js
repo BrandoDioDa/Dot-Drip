@@ -14,7 +14,7 @@ expressRouter.get('/', async (req, res) => {
 })
 
 //Get item by product id
-expressRouter.get('/product/:id', async (req, res) => {
+expressRouter.get('/products/:id', async (req, res) => {
     const { id } = req.params;
     const singleProduct = await product.findById(id);
     try {
@@ -25,7 +25,7 @@ expressRouter.get('/product/:id', async (req, res) => {
 })
 
 //ADDS a product to the database
-expressRouter.post('/product/add', async (req, res) => {
+expressRouter.post('/add', async (req, res) => {
     const createProduct = await product.create(req.body)
     try {
         return res.status(201).json(createProduct);
@@ -35,7 +35,7 @@ expressRouter.post('/product/add', async (req, res) => {
 })
 
 //DELETE by product id
-expressRouter.delete('/product/delete/:id', async (req, res) => {
+expressRouter.delete('/delete/:id', async (req, res) => {
     const { id } = req.params;
     await product.findByIdAndDelete(id);
     try {

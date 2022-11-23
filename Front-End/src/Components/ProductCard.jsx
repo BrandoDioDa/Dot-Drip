@@ -1,25 +1,19 @@
-import React from 'react';
-import notFound from "../view/images/notfound.jpg";
+import { Card, CardGroup, Button } from 'react-bootstrap';
+import { Link } from "react-router-dom";
+import "../view/cssDesign/ProductCard.css"
 
-
-const ProductCard = (props) => {
+const ProductCard = ({ obj }) => {
 
     return (
-        <div>
-            <div className='ProductCard'>
-                <b>{ props.product.prodName }</b>
-                    <br></br>
-                    <img 
-                        src={props.product.prodImage} 
-                        alt={props.product.prodName} 
-                        class="productImage"
-                        onError={(e) => { e.target.onError = null; e.target.src = notFound}}
-                    ></img>
-                <br></br>
-                { props.product.prodDesc }
-                <br></br>
-            </div>
-        </div>
+        <Card className="ProductCard" style={{ width: '16rem', height: '16rem'}}>
+            <img src={obj.image}/>
+            <Card.Body>
+                <Card.Title>{obj.title}</Card.Title>
+                <Card.Text>{obj.vendor}</Card.Text>
+                <Button variant="btn btn-outline-dark" className="m-2">To Cart</Button>
+                <Link className="btn btn-outline-dark" to={`/Products/${obj._id}`}>More...</Link>
+            </Card.Body>
+        </Card>
     )
 }
 
