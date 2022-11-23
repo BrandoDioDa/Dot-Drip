@@ -7,7 +7,7 @@ import NavBar from "./Components/navBar";
 import Login from "./view/pages/Login";
 import Signin from "./view/pages/Signin";
 import Admin from "./view/pages/Admin";
-import About from "./view/pages/AboutUs";
+import AboutUs from "./view/pages/AboutUs";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
                 <Route path="/Clothes" element={<Clothes/>} />
                 <Route path="/Login" element={<Login/>} />
                 <Route path="/Signin" element={<Signin/>} />
-                <Route path="/AboutUs" element={<About/>} />
+                <Route path="/AboutUs" element={<AboutUs/>} />
                 <Route path="*" element={<NotFound/>} />
             </Routes>
         </BrowserRouter>
