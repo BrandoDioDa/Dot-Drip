@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="">
+    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="Card component created | commented out clothes page | developing main | created ProductCard.css">
+      <change afterPath="$PROJECT_DIR$/Front-End/src/Components/deleteItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front-End/src/view/cssDesign/ProductCard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front-End/src/view/images/deleteIcon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/routes/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/routes/Products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/services/productsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/services/productsService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Admin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Admin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/src/Components/ProductCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/Components/ProductCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/src/view/cssDesign/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/cssDesign/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Clothes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Clothes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +188,9 @@
       <workItem from="1668806871472" duration="1784000" />
       <workItem from="1668893646324" duration="10827000" />
       <workItem from="1669004168307" duration="907000" />
-      <workItem from="1669140571474" duration="20116000" />
+      <workItem from="1669140571474" duration="29196000" />
+      <workItem from="1669188993782" duration="26000" />
+      <workItem from="1669237328396" duration="679000" />
     </task>
     <task id="LOCAL-00001" summary="messagwe">
       <created>1663115835095</created>
@@ -396,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669150897997</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Installed react-bootstrap | updated userServer.js | Fixed Login.jsx">
+      <created>1669170434327</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1669170434327</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,7 +427,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="messagwe" />
     <MESSAGE value="message" />
     <MESSAGE value="Installed react-router-dom | changed app.js to allow routing to different pages | created directories to hold content for front-end | created shopping cart and main menu page" />
     <MESSAGE value="Installed react-router-dom | changed app.js to allow routing to different pages | created directories to hold content for front-end | created shopping cart and main menu page | added NotFound.jsx" />
@@ -439,7 +451,8 @@
     <MESSAGE value="created connections to the users and checkout databases that we need | Functions created to delete and get information | THE ADDING FUNCTION IS STILL UNDER DEVELOPMENT" />
     <MESSAGE value="BIG CHANGES | Dropdowns now work properly, make sure you install the new libraries in index.html | productsService.js can be exported to use any of it's functions to change the products DB" />
     <MESSAGE value="Installed react-bootstrap | updated userServer.js | Fixed Login.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="Installed react-bootstrap | updated userServer.js | Fixed Login.jsx" />
+    <MESSAGE value="Card component created | commented out clothes page | developing main | created ProductCard.css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Card component created | commented out clothes page | developing main | created ProductCard.css" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -447,8 +460,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Back-End/model/users.js</url>
           <line>27</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Front-End/src/view/pages/Admin.jsx</url>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
