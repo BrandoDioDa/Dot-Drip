@@ -1,0 +1,26 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "Back end for dot drip",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start-watch": "nodemon server.js",
+    "dev": "concurrently \" npm run start-watch\" \"cd ../Front-End && npm start\""
+  },
+  "author": "Brandon Stevenson",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongodb": "^4.11.0",
+    "mongoose": "^6.7.1",
+    "node": "^19.0.0",
+    "validator": "^13.7.0"
+  }
+}

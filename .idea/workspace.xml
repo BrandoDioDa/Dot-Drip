@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="">
+    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="Card component created | commented out clothes page | developing main | created ProductCard.css">
+      <change afterPath="$PROJECT_DIR$/Front-End/src/Components/deleteItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front-End/src/view/cssDesign/ProductCard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front-End/src/view/images/deleteIcon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/src/Components/ProductCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/Components/ProductCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/src/view/cssDesign/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/cssDesign/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Clothes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Clothes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -27,6 +35,7 @@
             <value>
               <list>
                 <branch-info repo="$PROJECT_DIR$" source="Development" />
+                <branch-info repo="$PROJECT_DIR$" source="43-seperate-the-front-end-and-backend" />
               </list>
             </value>
           </entry>
@@ -35,10 +44,11 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="25-create-a-navigation-bar-css" />
+        <entry key="$PROJECT_DIR$" value="38-create-filter-button" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
@@ -59,9 +69,10 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mongo" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -71,40 +82,34 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\src\Components" />
-      <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\src\view\cssDesign" />
+      <recent name="C:\Coding Projects\Personal_Labs\Dot-Drip\Front-End\src" />
+      <recent name="C:\Coding Projects\Personal_Labs\Dot-Drip\Front-End" />
+      <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\Back-End" />
+      <recent name="C:\Coding Projects\Personal Labs\Dot-Drip\Front-end" />
+      <recent name="C:\Coding Projects\Personal Lab\Front-End" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
-    <configuration name="renders learn react link" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/App.test.js" />
-      <test-names>
-        <test-name value="renders learn react link" />
-      </test-names>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="server.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Back-End/server.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="build-css" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/Back-End/package.json" />
       <command value="run" />
       <scripts>
-        <script value="build-css" />
+        <script value="dev" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
+    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/Front-End/package.json" />
       <command value="run" />
       <scripts>
         <script value="start" />
@@ -113,11 +118,15 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Node.js.server.js" />
+      <item itemvalue="npm.dev" />
+      <item itemvalue="npm.start (1)" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.renders learn react link" />
-        <item itemvalue="npm.build-css" />
-        <item itemvalue="Jest.renders learn react link" />
+        <item itemvalue="npm.start (1)" />
+        <item itemvalue="npm.start (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -148,6 +157,40 @@
       <workItem from="1666141576142" duration="1949000" />
       <workItem from="1666231484369" duration="2341000" />
       <workItem from="1666235809137" duration="51000" />
+      <workItem from="1666298796172" duration="1510000" />
+      <workItem from="1666301204565" duration="1264000" />
+      <workItem from="1666581970247" duration="764000" />
+      <workItem from="1666728192878" duration="8280000" />
+      <workItem from="1666810134515" duration="1300000" />
+      <workItem from="1666811800057" duration="7205000" />
+      <workItem from="1666827973115" duration="2586000" />
+      <workItem from="1666831771033" duration="2371000" />
+      <workItem from="1667020800705" duration="608000" />
+      <workItem from="1667184979355" duration="4360000" />
+      <workItem from="1667326334899" duration="4473000" />
+      <workItem from="1667344029462" duration="2897000" />
+      <workItem from="1667696540368" duration="4567000" />
+      <workItem from="1667702611019" duration="2580000" />
+      <workItem from="1667707735505" duration="84000" />
+      <workItem from="1667942086550" duration="36000" />
+      <workItem from="1667966841172" duration="14000" />
+      <workItem from="1667967834567" duration="597000" />
+      <workItem from="1668025817100" duration="6051000" />
+      <workItem from="1668299099200" duration="6407000" />
+      <workItem from="1668393358883" duration="2145000" />
+      <workItem from="1668535615589" duration="1728000" />
+      <workItem from="1668538956881" duration="12439000" />
+      <workItem from="1668571929182" duration="2273000" />
+      <workItem from="1668667825801" duration="2863000" />
+      <workItem from="1668705805450" duration="1197000" />
+      <workItem from="1668716188753" duration="322000" />
+      <workItem from="1668727933826" duration="7548000" />
+      <workItem from="1668806871472" duration="1784000" />
+      <workItem from="1668893646324" duration="10827000" />
+      <workItem from="1669004168307" duration="907000" />
+      <workItem from="1669140571474" duration="29196000" />
+      <workItem from="1669188993782" duration="26000" />
+      <workItem from="1669237328396" duration="679000" />
     </task>
     <task id="LOCAL-00001" summary="messagwe">
       <created>1663115835095</created>
@@ -233,7 +276,140 @@
       <option name="project" value="LOCAL" />
       <updated>1666233632158</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added Text Color Navy Blue For Css function || Modified navbar with new font boldness, color, and navigation || Logo where &quot;Navbar&quot; is takes user to home screen">
+      <created>1666298987289</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666298987289</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added a login and sign-up button to navbar | Links to correct pages | modified the navbar to keep up with 5.0 bootstrap | Added prototype logo in images">
+      <created>1666735452556</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1666735452556</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Seperated Front-end and Back-end | installed nodemon | installed concurrently | installed mongoose |">
+      <created>1666835361617</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666835361618</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Seperated Front-end and Back-end | installed nodemon | installed concurrently | installed mongoose |">
+      <created>1666835499089</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1666835499089</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Front-end and Back-end run together">
+      <created>1667350040430</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1667350040430</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Creating the models and routes for the database.">
+      <created>1667707787574</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1667707787574</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Creating the models and routes for the database.">
+      <created>1668041034239</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1668041034239</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Created admin page Admin.jsx">
+      <created>1668198071992</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1668198071992</updated>
+    </task>
+    <task id="LOCAL-00021" summary="got rid of comments causing warning">
+      <created>1668299388996</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1668299388996</updated>
+    </task>
+    <task id="LOCAL-00022" summary="admin page construction in progress.">
+      <created>1668307812887</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1668307812887</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Updated the server to communicate with the cluster directly | Updated the Schema for products.js | Updated record.js to get all items for products | created a services' folder in the front-end that allows the front-end to communicate to the database | Installed some dependencies for QOL">
+      <created>1668573335534</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1668573335534</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Updated the server to communicate with the cluster directly | Updated the Schema for products.js | Updated record.js to get all items for products | created a services' folder in the front-end that allows the front-end to communicate to the database | Installed some dependencies for QOL">
+      <created>1668579513490</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1668579513490</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Set up the middleware for the front-end and the back-end | Database contents can now be seen and quality of life was added">
+      <created>1668716476149</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1668716476149</updated>
+    </task>
+    <task id="LOCAL-00026" summary="back-end can retrieve product by objectId">
+      <created>1668748666162</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1668748666162</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Created more record functions to manipulate the database | .post and .put are still under development.">
+      <created>1668807787673</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1668807787673</updated>
+    </task>
+    <task id="LOCAL-00028" summary="created connections to the users and checkout databases that we need | Functions created to delete and get information | THE ADDING FUNCTION IS STILL UNDER DEVELOPMENT">
+      <created>1668908069188</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1668908069188</updated>
+    </task>
+    <task id="LOCAL-00029" summary="BIG CHANGES | Dropdowns now work properly, make sure you install the new libraries in index.html | productsService.js can be exported to use any of it's functions to change the products DB">
+      <created>1669145771905</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1669145771905</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Installed react-bootstrap | updated userServer.js | Fixed Login.jsx">
+      <created>1669150897997</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1669150897997</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Installed react-bootstrap | updated userServer.js | Fixed Login.jsx">
+      <created>1669170434327</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1669170434327</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +427,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="messagwe" />
     <MESSAGE value="message" />
     <MESSAGE value="Installed react-router-dom | changed app.js to allow routing to different pages | created directories to hold content for front-end | created shopping cart and main menu page" />
     <MESSAGE value="Installed react-router-dom | changed app.js to allow routing to different pages | created directories to hold content for front-end | created shopping cart and main menu page | added NotFound.jsx" />
@@ -262,6 +437,36 @@
     <MESSAGE value="Added more necessary pages" />
     <MESSAGE value="Added background color by adding a css function in the main.css file. It applies to all pages backgrounds." />
     <MESSAGE value="Added Text Color Navy Blue For Css function || Modified navbar with new font boldness, color, and navigation || Logo where &quot;Navbar&quot; is takes user to home screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Text Color Navy Blue For Css function || Modified navbar with new font boldness, color, and navigation || Logo where &quot;Navbar&quot; is takes user to home screen" />
+    <MESSAGE value="Added a login and sign-up button to navbar | Links to correct pages | modified the navbar to keep up with 5.0 bootstrap | Added prototype logo in images" />
+    <MESSAGE value="Seperated Front-end and Back-end | installed nodemon | installed concurrently | installed mongoose |" />
+    <MESSAGE value="Front-end and Back-end run together" />
+    <MESSAGE value="Creating the models and routes for the database." />
+    <MESSAGE value="Created admin page Admin.jsx" />
+    <MESSAGE value="got rid of comments causing warning" />
+    <MESSAGE value="admin page construction in progress." />
+    <MESSAGE value="Updated the server to communicate with the cluster directly | Updated the Schema for products.js | Updated record.js to get all items for products | created a services' folder in the front-end that allows the front-end to communicate to the database | Installed some dependencies for QOL" />
+    <MESSAGE value="Set up the middleware for the front-end and the back-end | Database contents can now be seen and quality of life was added" />
+    <MESSAGE value="back-end can retrieve product by objectId" />
+    <MESSAGE value="Created more record functions to manipulate the database | .post and .put are still under development." />
+    <MESSAGE value="created connections to the users and checkout databases that we need | Functions created to delete and get information | THE ADDING FUNCTION IS STILL UNDER DEVELOPMENT" />
+    <MESSAGE value="BIG CHANGES | Dropdowns now work properly, make sure you install the new libraries in index.html | productsService.js can be exported to use any of it's functions to change the products DB" />
+    <MESSAGE value="Installed react-bootstrap | updated userServer.js | Fixed Login.jsx" />
+    <MESSAGE value="Card component created | commented out clothes page | developing main | created ProductCard.css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Card component created | commented out clothes page | developing main | created ProductCard.css" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Back-End/model/users.js</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Front-End/src/view/pages/Admin.jsx</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
