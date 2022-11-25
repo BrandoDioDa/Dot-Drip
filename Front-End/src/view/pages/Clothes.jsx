@@ -30,7 +30,7 @@ const Clothes =() => {
     // Content holds the dynamic JS stuff
 
     return(
-        <div className="Bcolor">
+        <div className="BackgroundColor center">
             <h1>
                 Clothes
             </h1>

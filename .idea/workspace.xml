@@ -4,15 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="Card component created | commented out clothes page | developing main | created ProductCard.css">
-      <change afterPath="$PROJECT_DIR$/Front-End/src/Components/deleteItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/cssDesign/ProductCard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/images/deleteIcon.png" afterDir="false" />
+    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Front-End/src/view/images/mainPage.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Front-End/src/Components/ProductCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/Components/ProductCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/src/Components/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/Components/navBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/src/view/cssDesign/ProductCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/cssDesign/ProductCard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Front-End/src/view/cssDesign/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/cssDesign/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Cart.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Clothes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Clothes.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/NotFound.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/NotFound.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +53,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
@@ -190,7 +202,10 @@
       <workItem from="1669004168307" duration="907000" />
       <workItem from="1669140571474" duration="29196000" />
       <workItem from="1669188993782" duration="26000" />
-      <workItem from="1669237328396" duration="679000" />
+      <workItem from="1669237328396" duration="6086000" />
+      <workItem from="1669257317277" duration="11433000" />
+      <workItem from="1669315214919" duration="2441000" />
+      <workItem from="1669401321242" duration="6796000" />
     </task>
     <task id="LOCAL-00001" summary="messagwe">
       <created>1663115835095</created>
@@ -409,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669170434327</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Card component created | commented out clothes page | developing main | created ProductCard.css">
+      <created>1669238015489</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1669238015489</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
