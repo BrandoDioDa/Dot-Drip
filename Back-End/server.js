@@ -21,7 +21,6 @@ app.use(express.json());
 app.use("/api/Products", require("./routes/Products"));
 app.use("/api/Checkouts", require("./routes/Checkout"));
 app.use("/api/Users", require("./routes/Users"));
-app.use("/api/Auth", require("./routes/Auth"));
 
 
 app.use((err, req, res, next) => {

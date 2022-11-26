@@ -41,7 +41,6 @@ const Clothes =() => {
             </Link>
             {content}
         </div>
-
     );
 }
 
