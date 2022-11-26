@@ -1,17 +1,20 @@
 import {Link} from "react-router-dom";
 import React, { useState } from "react";
 import "../../App.css"
-import UseAxiosGet from "../../Hooks/HttpRequests";
 import { useEffect, setState } from "react";
+import axios from "axios";
 
 const Login =(props) => {
     const [user, Username] = useState(' ');
-    const[password, setPass] = useState(' ');
+    const [password, setPass] = useState(' ');
+    const [token, setToken] = useState(' ');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const user = UseAxiosGet('http://localhost:4000/api/Products');
-        console.log(user);
+        axios.get('http://localhost:4000/api/Auth').then(response => {
+            setToken(response.data);
+        });
+        console.log(token);
     }
     
     return(
