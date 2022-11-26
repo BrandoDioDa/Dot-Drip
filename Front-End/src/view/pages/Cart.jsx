@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 const Cart =() => {
     return(
-        <div className="Bcolor">
+        <div className="BackgroundColor">
             <h1>
                 Shopping Cart
             </h1>

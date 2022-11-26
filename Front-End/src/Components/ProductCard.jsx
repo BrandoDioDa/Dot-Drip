@@ -1,9 +1,8 @@
-import { Card, CardGroup, Button } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import "../view/cssDesign/ProductCard.css"
 
 const ProductCard = ({ obj }) => {
-
     return (
         <Card className="ProductCard" style={{ width: '16rem', height: '16rem'}}>
             <img src={obj.image}/>
