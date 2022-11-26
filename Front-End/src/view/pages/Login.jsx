@@ -5,9 +5,9 @@ import { useEffect, setState } from "react";
 import axios from "axios";
 
 const Login =(props) => {
-    const [user, Username] = useState(' ');
-    const [password, setPass] = useState(' ');
-    const [token, setToken] = useState(' ');
+    const [user, Username] = useState('');
+    const [password, setPass] = useState('');
+    const [token, setToken] = useState('');
     const [content, setContent] = useState('');
 
     const nav = useNavigate();
