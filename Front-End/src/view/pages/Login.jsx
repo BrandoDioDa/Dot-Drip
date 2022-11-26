@@ -21,32 +21,39 @@ const Login =(props) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Check the login ...
-        fetch(`http://localhost:4000/api/Users/auth/${user}/${password}`, {
-            method:"GET",
-            crossDomain:true,
-            headers:{
-                "Content-Type":"application/json",
-                "Accept":"application/json",
-                "Access-Control-Allow-Origin":"*",
-            },
-        })
-        .then(function(response) {
-            if ( response.status === 200 ) { // Login!
-                setContent(<p>Successfully Logged in!</p>)
-                // TODO-Redirect to the page, store the information on the system?
-                navigateHome();
-            }
-            else if ( response.status === 204 ) { // Wrong password
-                setContent(<p>Wrong password or email. Please check</p>);
-            }
-            else {                  // Other error
-                // Failed!
-            }
-        })
-        .catch(function(error) {
-            console.log(error);
-        });
-        console.log(token);
+        if ( !user ) {
+            setContent(<p>Please enter Username!</p>);
+        }
+        else if ( !password ) {
+            setContent(<p>Please enter Password!</p>);
+        }
+        else {
+            fetch(`http://localhost:4000/api/Users/auth/${user}/${password}`, {
+                method:"GET",
+                crossDomain:true,
+                headers:{
+                    "Content-Type":"application/json",
+                    "Accept":"application/json",
+                    "Access-Control-Allow-Origin":"*",
+                },
+            })
+            .then(function(response) {
+                if ( response.status === 200 ) { // Login!
+                    setContent(<p>Successfully Logged in!</p>)
+                    // TODO-Redirect to the page, store the information on the system?
+                    navigateHome();
+                }
+                else if ( response.status === 204 ) { // Wrong password
+                    setContent(<p>Wrong password or email. Please check</p>);
+                }
+                else {                  // Other error
+                    // Failed!
+                }
+            })
+            .catch(function(error) {
+                console.log(error);
+            });
+        }
     }
     
     return(
