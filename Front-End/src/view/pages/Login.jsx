@@ -2,15 +2,13 @@ import {Link, useNavigate} from "react-router-dom";
 import React, { useState } from "react";
 import "../../App.css"
 import axios from "axios";
-import NavBar from "../../Components/navBar";
 
-const Login =(props) => {
+const Login = (props) => {
     const [user, Username] = useState('');
     const [password, setPass] = useState('');
     const [content, setContent] = useState('');
 
     const nav = useNavigate();
-
 
     const navigateHome = () => {
         // 👇️ navigate to /
@@ -31,9 +29,9 @@ const Login =(props) => {
             .then(response => {
                 if ( response.status === 200 ) { // Login!
                     setContent(<p>Successfully Logged in!</p>)
+                    // Sets local storage
                     localStorage.setItem('userData', JSON.stringify(response.data));
-                    NavBar.loggedIn = "TRUE";
-                    // TODO-Redirect to the page, store the information on the system?
+                    // Redirects to home
                     navigateHome();
                 }
                 else if ( response.status === 204 ) { // Wrong password
@@ -55,10 +53,10 @@ const Login =(props) => {
             <div className="auth-form-conatiner">
         <form className="Login-form" onSubmit={handleSubmit}>
 
-                <label for="Username">Username</label>
+                <label htmlFor="Username">Username</label>
                 <input value={user} onChange={(e) => Username(e.target.value)} type="username" placeholder="username" id="username" name="username" />
 
-                <label for="password">Password</label>
+                <label htmlFor="password">Password</label>
                 <input value={password} onChange={(e) => setPass(e.target.value)} type="password" placeholder="**********" id="password" name="password"></input>
                 <button type="submit">Log in</button>
         </form>

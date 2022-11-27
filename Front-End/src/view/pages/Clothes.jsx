@@ -2,22 +2,21 @@ import {Link} from "react-router-dom";
 import "../cssDesign/main.css"
 //import "../cssDesign/product.css"
 import ProductCard from "../../Components/ProductCard";
-import useAxiosGet from "../../Hooks/HttpRequests"
+import {getAllProducts} from "../../services/productsService"
+import UseAxiosGet from "../../Hooks/HttpRequests";
 
 const Clothes =() => {
 
     const url = `http://localhost:4000/api/Products`;               // HTTPS breaks it for SSL reasons
     var content="";
-    let products = useAxiosGet(url)
+    // need to switch this to the services ... functions tho ^__^
+    let products = UseAxiosGet(url);
 
+    console.log("products data",products.data);
     if(products.error){
         content = <p>
             There was an error fetching the stuff!
         </p>
-    }
-    if(products.loading){
-        content=
-        <p>Loading...</p>
     }
     if(products.data){
         content = (products.data).map((product, key) =>

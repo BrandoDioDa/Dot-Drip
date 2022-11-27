@@ -12,7 +12,7 @@ const ProductCard = (props) => {
                     <img 
                         src={props.product.prodImage} 
                         alt={props.product.prodName} 
-                        class="productImage"
+                        className="productImage"
                         onError={(e) => { e.target.onError = null; e.target.src = notFound}}
                     ></img>
                 <br></br>

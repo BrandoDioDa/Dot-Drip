@@ -46,7 +46,7 @@ const NavBar =() => {
                     <div className="nav-link active textColor">
                         {adminLink}
                         <img src={icon} style={{width:30, height:30}} alt=""/> {local.username}
-                        <button color="red" onClick={handleLogOut}>Log Out</button>
+                        <button className="btn btn-outline-secondary my-2 my-sm-0" color="red" onClick={handleLogOut}>Log Out</button>
                     </div>
                 </div>
             </nav>
