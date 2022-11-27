@@ -7,6 +7,7 @@ import adminicon from "../view/images/usericonadmin.png";
 const NavBar =() => {
     var local = localStorage.getItem('userData');
     var icon = usericon;
+    var adminLink = "";
     const nav = useNavigate();
 
     const navigateHome = () => {
@@ -15,7 +16,7 @@ const NavBar =() => {
     };
 
     console.log(local.username);
-    const handleSubmit = (e) => {
+    const handleLogOut = (e) => {
         localStorage.setItem('userData', null);
         navigateHome();
     }
@@ -24,6 +25,7 @@ const NavBar =() => {
         local = JSON.parse(local);
         if ( local.role === "ADMIN" ) {
             icon = adminicon;
+            adminLink = <a className="nav-link active textColor" href={"/Admin"}>Admin<span className="sr-only">(current)</span></a>
         }
         return(
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -42,8 +44,9 @@ const NavBar =() => {
                         <a className="nav-link active textColor" href="/">Popular-Items<span className="sr-only">(current)</span></a>
                     </div>
                     <div className="nav-link active textColor">
+                        {adminLink}
                         <img src={icon} style={{width:30, height:30}} alt=""/> {local.username}
-                        <button color="red" onClick={handleSubmit}>Log Out</button>
+                        <button color="red" onClick={handleLogOut}>Log Out</button>
                     </div>
                 </div>
             </nav>
