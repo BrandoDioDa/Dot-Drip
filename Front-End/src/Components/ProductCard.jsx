@@ -4,12 +4,12 @@ import "../view/cssDesign/ProductCard.css"
 
 const ProductCard = ({ obj }) => {
     return (
-        <Card className="ProductCard" style={{ width: '16rem', height: '16rem'}}>
-            <img src={obj.image}/>
+        <Card className="ProductCard" style={{ width: '20rem'}}>
+            <img src={obj.prodImage}/>
             <Card.Body>
-                <Card.Title>{obj.title}</Card.Title>
-                <Card.Text>{obj.vendor}</Card.Text>
-                <Button variant="btn btn-outline-dark" className="m-2">To Cart</Button>
+                <Card.Title>{obj.prodName}</Card.Title>
+                <Card.Text>In Stock : {obj.prodQuan}</Card.Text>
+                <Button className="m-2 btn-success">To Cart</Button>
                 <Link className="btn btn-outline-dark" to={`/Products/${obj._id}`}>More...</Link>
             </Card.Body>
         </Card>

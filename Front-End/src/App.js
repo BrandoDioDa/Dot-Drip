@@ -1,7 +1,7 @@
 import './App.css';
 import Main from "./view/pages/Main";
 import Cart from "./view/pages/Cart";
-import Clothes from "./view/pages/Clothes";
+import Clothes from "./view/pages/Clothes/Clothes";
 import NotFound from "./view/pages/NotFound";
 import NavBar from "./Components/navBar";
 import Login from "./view/pages/Login";
