@@ -20,7 +20,8 @@ const NavBar =() => {
         navigateHome();
     }
 
-    if ( local ) {
+    if ( local != 'null' ) {
+        local = JSON.parse(local);
         if ( local.role === "ADMIN" ) {
             icon = adminicon;
         }
