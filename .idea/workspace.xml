@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Front-End/src/Components/Carousel.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/cssDesign/carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/cssDesign/clothes.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/images/carouselImage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Clothes/Clothes.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Clothes/Filter.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Clothes/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Clothes/ProductDisplay.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/Components/ProductCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/Components/ProductCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Clothes.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Signin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Signin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/routes/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/routes/Users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/src/services/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/services/userService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,6 +199,8 @@
       <workItem from="1669315214919" duration="2441000" />
       <workItem from="1669401321242" duration="6796000" />
       <workItem from="1669532514672" duration="394000" />
+      <workItem from="1669533428038" duration="882000" />
+      <workItem from="1669572064164" duration="1118000" />
     </task>
     <task id="LOCAL-00001" summary="messagwe">
       <created>1663115835095</created>

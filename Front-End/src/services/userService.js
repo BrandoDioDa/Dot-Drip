@@ -4,7 +4,7 @@ const apiUrl = process.env.REACT_APP_API_URL;
 const jwtString = 'jwtlibraryyt';
 
 export const getUserById = async (id) => {
-    return await axios.get(`${apiUrl}/auth/auth/${id}`);
+    return await axios.get(`${apiUrl}/Products/users/${id}`);
 }
 
 export const registerUser = async (userObj) => {
