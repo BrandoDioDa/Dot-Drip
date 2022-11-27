@@ -9,6 +9,7 @@ const Signin = (props) => {
     const [pass, setPass] = useState('');
     const [email, setEmail] = useState('');
     const [content, setContent] = useState('');
+    const [localData, setLocalData] = useState('');
 
     
     const nav = useNavigate();

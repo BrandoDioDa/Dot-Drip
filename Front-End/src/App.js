@@ -10,6 +10,7 @@ import Admin from "./view/pages/Admin"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
+
     return (
         <BrowserRouter>
             <NavBar/>

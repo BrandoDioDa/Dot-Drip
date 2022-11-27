@@ -4,7 +4,7 @@ import "../../App.css"
 
 
 const Admin =() => {
-
+    var loggedIn = "FALSE";
     return(
 <body>
         <div className="App">

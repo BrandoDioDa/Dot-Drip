@@ -1,13 +1,12 @@
 import {Link, useNavigate} from "react-router-dom";
 import React, { useState } from "react";
 import "../../App.css"
-import { useEffect, setState } from "react";
 import axios from "axios";
+import NavBar from "../../Components/navBar";
 
 const Login =(props) => {
     const [user, Username] = useState('');
     const [password, setPass] = useState('');
-    const [token, setToken] = useState('');
     const [content, setContent] = useState('');
 
     const nav = useNavigate();
@@ -28,18 +27,12 @@ const Login =(props) => {
             setContent(<p>Please enter Password!</p>);
         }
         else {
-            fetch(`http://localhost:4000/api/Users/auth/${user}/${password}`, {
-                method:"GET",
-                crossDomain:true,
-                headers:{
-                    "Content-Type":"application/json",
-                    "Accept":"application/json",
-                    "Access-Control-Allow-Origin":"*",
-                },
-            })
-            .then(function(response) {
+            axios.get(`http://localhost:4000/api/Users/auth/${user}/${password}`)
+            .then(response => {
                 if ( response.status === 200 ) { // Login!
                     setContent(<p>Successfully Logged in!</p>)
+                    localStorage.setItem('userData', JSON.stringify(response.data));
+                    NavBar.loggedIn = "TRUE";
                     // TODO-Redirect to the page, store the information on the system?
                     navigateHome();
                 }
@@ -48,6 +41,7 @@ const Login =(props) => {
                 }
                 else {                  // Other error
                     // Failed!
+                    setContent(<p>Error getting login. Please try again.</p>);
                 }
             })
             .catch(function(error) {
