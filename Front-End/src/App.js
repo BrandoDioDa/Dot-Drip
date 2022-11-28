@@ -7,6 +7,7 @@ import NavBar from "./Components/navBar";
 import Login from "./view/pages/Login";
 import Signin from "./view/pages/Signup";
 import Admin from "./view/pages/Admin"
+import Checkout from "./view/pages/Checkout"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                 <Route path="/Clothes" element={<Clothes/>} />
                 <Route path="/Login" element={<Login/>} />
                 <Route path="/Signin" element={<Signin/>} />
+                <Route path="/Checkout" element={<Checkout/>} />
                 <Route path="*" element={<NotFound/>} />
             </Routes>
         </BrowserRouter>
