@@ -10,8 +10,10 @@ import Admin from "./view/pages/Admin";
 import AboutUs from "./view/pages/AboutUs";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
+
 function App() {
     return (
+    <div>
         <BrowserRouter>
             <NavBar/>
             <Routes>
@@ -25,6 +27,10 @@ function App() {
                 <Route path="*" element={<NotFound/>} />
             </Routes>
         </BrowserRouter>
+        
+
+
+</div>
     );
 }
 
