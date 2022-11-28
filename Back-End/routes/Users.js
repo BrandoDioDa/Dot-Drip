@@ -24,34 +24,42 @@ usersRouter.get('/users/id/:id', async (req, res) => {
     }
 })
 
+//Get item by username, returns whether it exists and returns a status number. USE ONLY FOR CHECKING IF USERNAME EXISTS
 usersRouter.get('/users/username/:username', async (req, res) => {
-    console.log(String(req.params.username));
     const singleEntry = await users.findOne({ name: String(req.params.username) });
-    console.log(singleEntry);
     try {
         if ( singleEntry === null ) {
-            return res.status(204).json({data: {message: "nf"}});
+            return res.status(204).json();
         }
         else {
-            return res.status(200).json({data: {message: "nf"}});
+            return res.status(200).json();
         }
     } catch (error) {
         return res.status(500).json({message: "Unable to get user"});
     }
 })
 
+// returns whether username/password match the database
 usersRouter.get('/auth/:username/:password', async (req, res) => {
-    const Users = await users.findOne({name: String(req.params.username).trim(), password: String(req.params.password).trim()});
+    const Users = await users.findOne({name: String(req.params.username), password: String(req.params.password)});
+    console.log("This is users",Users);
+    // create User token
     try {
-        if ( Users.password == String(req.params.password).trim() ) {
-            console.log("Logging in");
-            return res.status(200).json();          //Passwords match, log in
+        if ( Users ) {
+            if ( Users.password === String(req.params.password) ) {
+                console.log("Logging in");
+                return res.status(200).json({username: Users.name, role: Users.role});          //Passwords match, log in
+            }
+            else {
+                console.log("Login failed");
+                return res.status(204).json();          //Passwords do not match
+            }
         }
         else {
-            console.log("Login failed");
-            return res.status(204).json();          //Passwords do not match
+            console.log("nothing returned from Server");
         }
     } catch (error) {
+        console.log("Error");
         return res.status(500).json({message: "Unable to get users"});
     }
 })
