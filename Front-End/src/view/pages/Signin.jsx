@@ -24,7 +24,7 @@ const handleSubmit = (e) => {
         <input value={pass} onChange={(e) => setPass(e.target.value)} type="Password" placeholder="Password" id="Password" name="Password" />
 
         <label htmlFor="Re-Enter Password">Re-Enter Password</label>
-        <input value={repass} onChange={(e) => reenterpass(e.target.value)} type="Re-Enter Password" placeholder="Re-Enter Password" id="Re-Enter Password" name="Re-Enter Password" />
+        <input value={repass} onChange={(e) => reenterpass(e.target.value)} type="Password" placeholder="Re-Enter Password" id="Re-Enter Password" name="Re-Enter Password" />
 
         <button onClick={handleSubmit}>Register</button>
        </form>
