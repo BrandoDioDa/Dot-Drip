@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import "../view/cssDesign/ProductCard.css"
 
 const ProductCard = ({ obj }) => {
+
+
+
+
     return (
         <Card className="ProductCard" style={{ width: '20rem'}}>
             <img src={obj.prodImage}/>

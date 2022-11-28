@@ -20,7 +20,7 @@ const ProductDisplay =() => {
     }
 
     return(
-        <div className="container ">
+        <div className="container">
             <div className="row">
                 {products.map((product) => (
                     <div key={product._id} className="px-5 my-3 col-md-4">

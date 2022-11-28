@@ -4,7 +4,9 @@ const checkout = require('../model/checkout');
 
 //Get all items
 checkoutRouter.get('/', async (req, res) => {
-    const Check = await checkout.find();
+    const Check = await checkout.find()
+        .populate("cart", ["prodName", "prodDesc"])
+        .populate("account", ["name", "role"]);
     try {
         return res.status(200).json(Check)
     } catch (error) {
@@ -33,6 +35,16 @@ checkoutRouter.post('/checkout/add', async (req, res) => {
     }
 })
 
+
+checkoutRouter.put("/checkout/:id", async (req, res) => {
+    const { id } = req.params;
+    const checkoutToUpdate = await checkout.findByIdAndUpdate(id, req.body, {new: true});
+    try {
+        return res.status(202).json(checkoutToUpdate);
+    } catch (error) {
+        return res.status(500).json({message: "Can't update checkout id"})
+    }
+});
 //DELETE by product id
 checkoutRouter.delete('/checkout/delete/:id', async (req, res) => {
     const { id } = req.params;
