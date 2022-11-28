@@ -16,7 +16,7 @@ const checkoutSchema = Schema ({
         type: [
             {
               type: Schema.Types.ObjectId,
-              ref: "prodTypes"
+              ref: "prodLists"
             }
         ]
     },
