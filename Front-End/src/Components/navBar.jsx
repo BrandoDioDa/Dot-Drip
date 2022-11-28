@@ -14,8 +14,7 @@ const NavBar =() => {
                 <span className="navbar-toggler-icon"/>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkUp">
-                <a className="nav-link active textColor" href={"/Clothes"}>Clothes<span className="sr-only">(current)</span></a>
-                <a className="nav-link active textColor" href="/">Shoes<span className="sr-only">(current)</span></a>
+                <a className="nav-link active textColor" href={"/Clothes"}>Products<span className="sr-only">(current)</span></a>
                 <a className="nav-link active textColor" href="/">Popular-Items<span className="sr-only">(current)</span></a>
                 <a className="nav-link active textColor" href="/">About Us<span className="sr-only">(current)</span></a>
                 <form className="d-flex">
