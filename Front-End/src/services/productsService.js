@@ -18,5 +18,9 @@ export const editProduct = async (itemObj, id) => {
 }
 
 export const deleteProduct = async (id) => {
-    await axios.delete(`${apiUrl}/Products/delete/${id}`);
+    return await axios.get(`${apiUrl}/Products/`);
+}
+
+export const getUserById = async (id) => {
+    return await axios.get(`${apiUrl}/Products/users/${id}`);
 }

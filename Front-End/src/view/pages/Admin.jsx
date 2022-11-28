@@ -6,6 +6,7 @@ import "../cssDesign/admin.css"
 import "../../App.css"
 
 
+<<<<<<< HEAD
 const Admin = () => {
     const [items, setItems] = useState([]);
     async function getItems() {
@@ -17,6 +18,10 @@ const Admin = () => {
         console.log(items.pop());
     });
 
+=======
+const Admin =() => {
+    var loggedIn = "FALSE";
+>>>>>>> b4ed576591a51feb4cd2221b407e583364eb99bb
     return(
         <div className="App">
             <div className="auth-form-container">
