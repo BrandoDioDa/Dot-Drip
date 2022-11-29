@@ -15,13 +15,13 @@ const NavBar =() => {
         nav('/');
     };
 
-    console.log(local.username);
+    console.log(local);
     const handleLogOut = (e) => {
         localStorage.setItem('userData', null);
         navigateHome();
     }
 
-    if ( local != 'null' ) {
+    if ( local != 'null' && local != null && local != 'undefined') {
         local = JSON.parse(local);
         if ( local.role === "ADMIN" ) {
             icon = adminicon;
