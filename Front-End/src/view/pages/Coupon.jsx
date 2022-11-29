@@ -2,10 +2,10 @@ import {Link, useNavigate} from "react-router-dom";
 import React, { useState } from "react";
 import "../../App.css"
 import axios from "axios";
+import { checkCoupon } from "../../services/couponService";
 
 const Coupon =(props) => {
     const [user, Username] = useState('');
-    const [password, setPass] = useState('');
     const [content, setContent] = useState('');
 
 
@@ -18,8 +18,8 @@ const Coupon =(props) => {
         else {
             axios.get(`http://localhost:4000/api/Coupons/${user}`)
             .then(response => {
-                if ( response.status === 200 ) { // Login!
-                    console.log(response);
+                console.log(response);
+                if ( response.status === 200 ) { // Found a thing
                     setContent(<p>{response.data.discountAmount}</p>);
                 }
                 else if ( response.status === 204 ) { // Wrong password
@@ -39,9 +39,9 @@ const Coupon =(props) => {
     return(
         <div className="App">
             <div className="auth-form-conatiner">
+                <p>Coupon Testing Page :)</p>
         <form className="Login-form" onSubmit={handleSubmit}>
-
-                <label for="Username">Username</label>
+                <label htmlFor="Username">Username</label>
                 <input value={user} onChange={(e) => Username(e.target.value)} type="username" placeholder="username" id="username" name="username" />
         </form>
         {content}

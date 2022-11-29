@@ -1,7 +1,6 @@
 import axios from "axios";
 
 const apiUrl = process.env.REACT_APP_API_URL;
-const jwtString = 'jwtlibraryyt';
 
 export const getUserById = async (id) => {
     return await axios.get(`${apiUrl}/Products/users/${id}`);
@@ -18,3 +17,4 @@ export const editUser = async (userObj, id) => {
 export const deleteUser = async (id) => {
     await axios.delete(`${apiUrl}/auth/auth/${id}`);
 }
+

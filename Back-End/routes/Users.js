@@ -64,6 +64,28 @@ usersRouter.get('/auth/:username/:password', async (req, res) => {
     }
 })
 
+// checks that the user requested is an admin
+usersRouter.get('/auth/:username/', async (req, res) => {
+    const Users = await users.findOne({name: String(req.params.username)});
+    try {
+        if ( Users ) {
+            if ( Users.role === "ADMIN" ) {
+                return res.status(200).json({verified: true});          //Passwords match, log in
+            }
+            else {
+                console.log("Login failed");
+                return res.status(200).json({verified: false});          //Passwords do not match
+            }
+        }
+        else {
+            return res.status(204).json();
+        }
+    } catch (error) {
+        console.log("Error");
+        return res.status(500).json({message: "Unable to get users"});
+    }
+})
+
 //ADDS a product to the database
 usersRouter.post('/users/add', async (req, res) => {
     const createUser = await users.create(req.body)

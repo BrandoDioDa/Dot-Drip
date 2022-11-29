@@ -15,8 +15,8 @@ mongoose
 
 mongoose.Promise = global.Promise;
 
-//app.use(express.json());
 app.use(express.json());
+
 
 app.use("/api/Products", require("./routes/Products"));
 app.use("/api/Checkouts", require("./routes/Checkout"));
