@@ -14,8 +14,6 @@ const NavBar =() => {
         // 👇️ navigate to /
         nav('/');
     };
-
-    console.log(local);
     const handleLogOut = (e) => {
         localStorage.setItem('userData', null);
         navigateHome();
