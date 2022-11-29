@@ -72,7 +72,7 @@ const NavBar =() => {
                     <a className="nav-link active textColor" href={"/Cart"}>Cart<span className="sr-only">(current)</span></a>
                     <a className="nav-link active textColor" href={"/AboutUs"}>About<span className="sr-only">(current)</span></a>
                     <form className="container-fluid  text-right">
-                        <Link to="/Signin" className="px-3"><button className="btn btn-outline-secondary my-2 my-sm-0"  type="button" placeholder="Login">Sign-up</button></Link>
+                        <Link to="/SignUp" className="px-3"><button className="btn btn-outline-secondary my-2 my-sm-0"  type="button" placeholder="Login">Sign-up</button></Link>
                         <Link to={"/Login"}><button className="btn btn-outline-success my-2 my-sm-0" type="button" placeholder="Login">Log-in</button></Link>
                     </form>
                 </div>

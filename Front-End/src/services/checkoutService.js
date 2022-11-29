@@ -13,10 +13,10 @@ export const createCheckout = async (itemObj) => {
     return await axios.post(`${apiUrl}/Checkouts/checkout/add`, itemObj);
 }
 
-export const editProduct = async (itemObj, id) => {
-    await axios.put(`${apiUrl}/Products/add/${id}`, itemObj);
+export const editCheckout = async (itemObj, id) => {
+    await axios.put(`${apiUrl}/Checkouts/checkout/${id}`, itemObj);
 }
 
-export const deleteProduct = async (id) => {
-    await axios.delete(`${apiUrl}/Products/delete/${id}`);
+export const deleteCheckout = async (id) => {
+    await axios.delete(`${apiUrl}/Checkouts/checkout/delete/${id}`);
 }

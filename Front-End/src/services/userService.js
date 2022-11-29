@@ -7,6 +7,9 @@ export const getUserById = async (id) => {
     return await axios.get(`${apiUrl}/Products/users/${id}`);
 }
 
+export const getUserByUsername = async (username) => {
+    return await axios.get(`${apiUrl}/Users/users/${username}`);
+}
 export const registerUser = async (userObj) => {
     return await axios.post(`${apiUrl}/auth/signup`, userObj);
 }
@@ -18,3 +21,4 @@ export const editUser = async (userObj, id) => {
 export const deleteUser = async (id) => {
     await axios.delete(`${apiUrl}/auth/auth/${id}`);
 }
+

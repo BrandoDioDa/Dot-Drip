@@ -2,6 +2,8 @@ import {Link, useNavigate} from "react-router-dom";
 import React, {useState} from "react"
 import "../../App.css"
 import axios from 'axios'
+import {getUserByUsername} from "../../services/userService";
+import {createCheckout} from "../../services/checkoutService";
 
 const Signin = (props) => {
     const [user, setUsername] = useState('');
@@ -9,17 +11,16 @@ const Signin = (props) => {
     const [pass, setPass] = useState('');
     const [email, setEmail] = useState('');
     const [content, setContent] = useState('');
-
+    const [id, setId] = useState('');
     
     const nav = useNavigate();
-
 
     const navigateHome = () => {
         // 👇️ navigate to /
         nav('/');
     };
 
-    const HandleSubmit = (e) => {
+    const HandleSubmit = async (e) => {
         e.preventDefault();
         // Checks for input
         if ( !user ) {
@@ -39,12 +40,33 @@ const Signin = (props) => {
                 if ( response.status === 204 ) {        // did not find a username in the database
                     // Add to the database!
                     axios.post("http://localhost:4000/api/Users/users/add",
-                    {  name:       user,
+                    {  name:   user,
                         password:   pass,
                         email:      email,})
-                    .then(function(response) {
-                        console.log(response);
+                    .then(async function (response) {
                         setContent(<p>Created account!</p>);
+                        console.log(response);
+                        await getUserId()
+                        console.log(id)
+                        createCheckout({
+                            account: response.data._id,
+                            date: Date.now(),
+                            shippingInfo: {
+                                firstname: 'def',
+                                lastname: 'def',
+                                city: 'def',
+                                state: 'def',
+                                zipcode: 'def',
+                            },
+                            payment: {
+                                type: 'def',
+                                cardNum: 'def',
+                                nameOnCard: 'def',
+                                securityNum: 'def',
+                                expDate: 'def',
+                                amount: 0
+                            }
+                        })
                         // Logs into their account, sets localdata
                         localStorage.setItem('userData', JSON.stringify({username: user, role: "USER"}));
                         // Redirect to the main page
@@ -67,6 +89,12 @@ const Signin = (props) => {
             // Show error on screen
             setContent(<p>ERROR: Passwords do not match!</p>);
         }
+    }
+
+    async function getUserId() {
+        const responseCheckout = await getUserByUsername(user);
+        console.log(responseCheckout.data);
+        setId(responseCheckout.data);
     }
 
     return(

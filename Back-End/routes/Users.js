@@ -24,9 +24,20 @@ usersRouter.get('/users/id/:id', async (req, res) => {
     }
 })
 
+usersRouter.get('/users/:username', async (req, res) => {
+    const singleEntry = await users.findOne({ name: String(req.params.username) });
+    console.log(singleEntry);
+    try {
+        return res.status(200).json(singleEntry)
+    } catch (error) {
+        return res.status(500).json({message: "Unable to get user"});
+    }
+})
+
 //Get item by username, returns whether it exists and returns a status number. USE ONLY FOR CHECKING IF USERNAME EXISTS
 usersRouter.get('/users/username/:username', async (req, res) => {
     const singleEntry = await users.findOne({ name: String(req.params.username) });
+    console.log(singleEntry);
     try {
         if ( singleEntry === null ) {
             return res.status(204).json();

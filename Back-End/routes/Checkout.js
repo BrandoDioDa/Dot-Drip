@@ -27,7 +27,7 @@ checkoutRouter.get('/checkout/:id', async (req, res) => {
 
 //ADDS a product to the database
 checkoutRouter.post('/checkout/add', async (req, res) => {
-    const createCheck = await checkout.create(req.body)
+    const createCheck = await checkout.create(req.body);
     try {
         return res.status(201).json(createCheck);
     } catch (error) {
