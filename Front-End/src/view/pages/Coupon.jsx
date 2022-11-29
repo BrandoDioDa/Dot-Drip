@@ -2,20 +2,12 @@ import {Link, useNavigate} from "react-router-dom";
 import React, { useState } from "react";
 import "../../App.css"
 import axios from "axios";
-import NavBar from "../../Components/navBar";
 
-const Login =(props) => {
+const Coupon =(props) => {
     const [user, Username] = useState('');
     const [password, setPass] = useState('');
     const [content, setContent] = useState('');
 
-    const nav = useNavigate();
-
-
-    const navigateHome = () => {
-        // 👇️ navigate to /
-        nav('/');
-    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -23,18 +15,12 @@ const Login =(props) => {
         if ( !user ) {
             setContent(<p>Please enter Username!</p>);
         }
-        else if ( !password ) {
-            setContent(<p>Please enter Password!</p>);
-        }
         else {
-            axios.get(`http://localhost:4000/api/Users/auth/${user}/${password}`)
+            axios.get(`http://localhost:4000/api/Coupons/${user}`)
             .then(response => {
                 if ( response.status === 200 ) { // Login!
-                    setContent(<p>Successfully Logged in!</p>)
-                    localStorage.setItem('userData', JSON.stringify(response.data));
-                    NavBar.loggedIn = "TRUE";
-                    // TODO-Redirect to the page, store the information on the system?
-                    navigateHome();
+                    console.log(response);
+                    setContent(<p>{response.data.discountAmount}</p>);
                 }
                 else if ( response.status === 204 ) { // Wrong password
                     setContent(<p>Wrong password or email. Please check</p>);
@@ -57,18 +43,12 @@ const Login =(props) => {
 
                 <label for="Username">Username</label>
                 <input value={user} onChange={(e) => Username(e.target.value)} type="username" placeholder="username" id="username" name="username" />
-
-                <label for="password">Password</label>
-                <input value={password} onChange={(e) => setPass(e.target.value)} type="password" placeholder="**********" id="password" name="password"></input>
-                <button type="submit">Log in</button>
         </form>
         {content}
-            <Link to={"/Signin"}>
-                <button className="link-btn">Don't have an account? Sign in Here.</button>
-            </Link>
+        <button onClick={handleSubmit}>Check</button>
         </div>
         </div>
     );
 }
 
-export default Login;
+export default Coupon;
