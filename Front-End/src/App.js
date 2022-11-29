@@ -9,6 +9,7 @@ import Signin from "./view/pages/Signin";
 import Admin from "./view/pages/Admin";
 import AboutUs from "./view/pages/AboutUs";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {FooterContainer} from './containers/footer'
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/AboutUs" element={<AboutUs/>} />
                 <Route path="*" element={<NotFound/>} />
             </Routes>
+            <FooterContainer/>
         </BrowserRouter>
     );
 }
