@@ -9,6 +9,10 @@ export const getCheckoutById = async (id) => {
     return await axios.get(`${apiUrl}/Checkouts/checkout/${id}`);
 }
 
+export const getCheckoutByAccount = async (id) => {
+    return await axios.get(`${apiUrl}/Checkouts/checkout/account/${id}`);
+}
+
 export const createCheckout = async (itemObj) => {
     return await axios.post(`${apiUrl}/Checkouts/checkout/add`, itemObj);
 }
