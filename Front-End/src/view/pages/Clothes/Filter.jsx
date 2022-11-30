@@ -3,12 +3,10 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import Button from "react-bootstrap/esm/Button";
 import Form from 'react-bootstrap/Form';
 import "../../cssDesign/clothes.css";
-import "../../cssDesign/filter.css";
 
 const Filter =() => {
     return (
             <Dropdown size="normal" align="end" autoClose="inside">
-             
                 <Dropdown.Toggle variant="success" id="dropdown-basic">Filter</Dropdown.Toggle>
                 <Dropdown.Menu>
                     <Form>
