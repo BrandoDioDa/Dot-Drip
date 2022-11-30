@@ -5,10 +5,7 @@ import usericon from "../view/images/usericon.png";
 import adminicon from "../view/images/usericonadmin.png";
 
 const NavBar =() => {
-
     let local = localStorage.getItem('userData');
-
-
     let icon = usericon;
     let adminLink = "";
     const nav = useNavigate();
