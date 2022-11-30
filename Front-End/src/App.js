@@ -10,6 +10,7 @@ import SignUp from "./view/pages/Signup";
 import Admin from "./view/pages/Admin"
 import Coupon from "./view/pages/Coupon"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {FooterContainer} from "./containers/footer";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
                 <Route path="/Coupon" element={<Coupon/>} />
                 <Route path="*" element={<NotFound/>} />
             </Routes>
+            <FooterContainer/>
         </BrowserRouter>
     </div>
     );

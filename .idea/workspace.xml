@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="Updated Navbar">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front-End/src/Components/footer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front-End/src/Components/footer/styles/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front-End/src/containers/footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/model/checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/model/checkout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/routes/Checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/routes/Checkout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/routes/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/routes/Products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/routes/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/routes/Users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Front-End/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/Components/ProductCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/Components/ProductCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/Components/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/Components/navBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/services/checkoutService.js" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/services/checkoutService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/services/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/services/userService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/services/usersService.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Signin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Signin.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Signup.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +69,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2EjhSEteSQpSGifaCwyNug8t4MF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
