@@ -19,8 +19,19 @@ const Filter =() => {
                     <Dropdown.Item href="#/action-3">Kids</Dropdown.Item>
                         
                 <Dropdown.Divider/>
+                    <Dropdown.Header>Sort by:</Dropdown.Header>
+                    <Dropdown.Item href="#/action-4">Price(inc)</Dropdown.Item>
+                    <Dropdown.Item href="#/action-5">Price(dec)</Dropdown.Item>
+                    <Dropdown.Item href="#/action-6">Quantity(inc)</Dropdown.Item>
+                    <Dropdown.Item href="#/action-7">Quantity(dec)</Dropdown.Item>
+                <Dropdown.Divider/>
+                    <Dropdown.Header>Item Type:</Dropdown.Header>
+                    <Dropdown.Item href="#/action-8">Shirt</Dropdown.Item>
+                    <Dropdown.Item href="#/action-9">Pants</Dropdown.Item>
+                    <Dropdown.Item href="#/action-10">Other</Dropdown.Item>
+                <Dropdown.Divider/>
 
-                   <Button href="#/action-4" variant="outline-info" size="normal">Go to Cart</Button>
+                   <Button href="#/action-11" variant="outline-info" size="normal">Go to Cart</Button>
 
                 </Dropdown.Menu>
             </Dropdown>
