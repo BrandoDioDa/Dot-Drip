@@ -1,17 +1,19 @@
 import {Link, useNavigate} from "react-router-dom";
 import React, {useState} from "react"
+import { getUserByUsername } from "../../services/userService";
 import "../../App.css"
+import {getAllProducts} from "../../services/productsService";
+import {createCheckout} from "../../services/checkoutService";
 
 const Signin = (props) => {
     const [user, setUsername] = useState('');
     const [repass, setRepass] = useState('');
     const [pass, setPass] = useState('');
     const [email, setEmail] = useState('');
+    const [id, setId] = useState('');
     const [content, setContent] = useState('');
 
-
     const nav = useNavigate();
-
 
     const navigateHome = () => {
         // 👇️ navigate to /
@@ -82,6 +84,11 @@ const Signin = (props) => {
             // Show error on screen
             setContent(<p>ERROR: Passwords do not match!</p>);
         }
+    }
+
+    async function getUserId() {
+        const responseCheckout = await getUserByUsername(user);
+        setId(responseCheckout.data);
     }
 
     return(

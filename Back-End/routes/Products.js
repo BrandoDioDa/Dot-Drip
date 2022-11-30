@@ -5,7 +5,6 @@ const product = require('../model/products');
 //Get all items
 expressRouter.get('/', async (req, res) => {
     const product1 = await product.find();
-    console.log(product1);
     try {
         return res.status(200).json(product1)
     } catch (error) {

@@ -59,7 +59,7 @@ const Login =(props) => {
                 <input value={user} onChange={(e) => Username(e.target.value)} type="username" placeholder="username" id="username" name="username" />
 
                 <label for="password">Password</label>
-                <input value={password} onChange={(e) => setPass(e.target.value)} type="password" placeholder="**********" id="password" name="password"></input>
+                <input value={password} onChange={(e) => setPass(e.target.value)} type="password" placeholder="**********" id="password" name="password"/>
                 <button type="submit">Log in</button>
         </form>
         {content}

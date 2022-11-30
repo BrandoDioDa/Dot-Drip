@@ -31,17 +31,17 @@ const Cart =() => {
     };
     return(
         <div>
-<div>
-<Header countCartItems={cartItems.length}></Header>
-</div>
+            <div>
+                <Header countCartItems={cartItems.length}/>
+            </div>
 
-<div className="container">
-<div className="row">
-<Primary onAdd={onAdd} products={products}></Primary>
-<Basket onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}></Basket>
-</div>
-</div>
-</div>
+            <div className="container">
+                <div className="row">
+                    <Primary onAdd={onAdd} products={products}/>
+                    <Basket onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/>
+                </div>
+            </div>
+        </div>
     );
 }
 export default Cart;

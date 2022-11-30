@@ -1,6 +1,9 @@
 import { Card, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import { getProductById } from "../services/productsService";
+import axios from "axios";
 import "../view/cssDesign/ProductCard.css"
+import React, { useState, useEffect } from "react";
 
 const ProductCard = ({ obj }) => {
     return (
