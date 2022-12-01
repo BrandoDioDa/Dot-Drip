@@ -53,4 +53,16 @@ expressRouter.delete('/delete/:id', async (req, res) => {
         return res.status(500).json({message: "Unable to delete product"});
     }
 })
+
+//GET from query provided through req.body
+expressRouter.get('/query/:q', async (req, res) => {
+    console.log(JSON.parse(req.params.q));
+    const product1 = await product.find(JSON.parse(req.params.q));
+    try {
+        return res.status(201).json(product1);
+    } catch (error) {
+        return res.status(500).json();
+    }
+})
+
 module.exports = expressRouter;
