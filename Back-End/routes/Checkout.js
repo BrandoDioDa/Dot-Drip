@@ -41,7 +41,6 @@ checkoutRouter.get('/checkout/account/:id', async (req, res) => {
 checkoutRouter.get('/checkout/cart/:id', async (req, res) => {
     const { id } = req.params;
     const singleEntry = await checkout.findById(id);
-    console.log(singleEntry);
     try {
         return res.status(200).json(singleEntry)
     } catch (error) {

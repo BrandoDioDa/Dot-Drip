@@ -3,10 +3,13 @@ import "../cssDesign/clothes.css"
 import Basket from "../../Components/Basket";
 import Primary from "../../Components/Primary";
 import data from '../../data'
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
+import {getUserByUsername} from "../../services/userService";
+import {getCheckoutByAccount} from "../../services/checkoutService";
 
 
 const Cart =() => {
+    const verify = JSON.parse(localStorage.getItem('userData'));
     const {products} = data;
     const [cartItems, setCartItems] = useState([]);
     const onAdd = (product) => {
@@ -30,6 +33,18 @@ const Cart =() => {
             );
         }
     };
+
+    useEffect(() => {
+        getCart();
+    }, []);
+
+    async function getCart() {
+        const user = await getUserByUsername(verify.username);
+        const cart = await getCheckoutByAccount(user.data._id);
+        console.log(user.data);
+        console.log(cart.data);
+    }
+
     return(
         <div className="BackgroundColor">
             <div className="container-fluid">
