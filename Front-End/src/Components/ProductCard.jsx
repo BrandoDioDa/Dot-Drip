@@ -56,6 +56,7 @@ const ProductCard = ({ obj }) => {
             <Card.Body>
                 <Card.Title>{obj.prodName}</Card.Title>
                 <Card.Text>In Stock : {inStock}</Card.Text>
+                <Card.Text>Price : {obj.prodPrice}</Card.Text>
                 { dynamicButton }
                 <Link className="btn btn-outline-dark" to={`/Products/${obj._id}`}>More...</Link>
             </Card.Body>

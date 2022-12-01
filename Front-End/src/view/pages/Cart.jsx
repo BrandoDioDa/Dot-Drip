@@ -21,7 +21,7 @@ const Cart =() => {
 
 
     //FOR BASKET
-    const itemPrice = 0;
+    let itemPrice = 0;
     const taxPrice = itemPrice * 0.14;
     const shippingPrice = itemPrice > 2000 ? 0 : 50;
     let totalPrice = (itemPrice + taxPrice + shippingPrice);
@@ -134,7 +134,6 @@ const Cart =() => {
 
                                     <div className='col-2 text-right'>
                                         {item.inCart} x {item.prodPrice}
-
                                     </div>
                                 </div>
                             </h4>

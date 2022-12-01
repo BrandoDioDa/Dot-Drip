@@ -13,10 +13,9 @@ const Purchasepage =() =>
         name = (JSON.parse(local)).username;
     }
     return(
-    <div className="container center" style={{fontSize: "4.5vh"}}>Thank you for making your purchase at Dot-Drip. {name}
-           
-            <div className="container ce">
-                <p>If you would like to contiue shopping please press the button below.</p>
+    <div className="container-fluid center" style={{fontSize: "4.5vh"}}>{name}'s Order History:
+            <div className="container-fluid ">
+                <p>If you would like to continue shopping please press the button below.</p>
 
                 <Link to={"/Clothes"}>
                     <Button variant="dark" size={"lg"} >Continue To Browse</Button>

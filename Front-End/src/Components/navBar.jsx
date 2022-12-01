@@ -41,8 +41,8 @@ const NavBar =() => {
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkUp">
                         <a className="nav-link active textColor" href={"/Clothes"}>Products<span className="sr-only">(current)</span></a>
                         <a className="nav-link active textColor" href={"/Cart"}>Cart<span className="sr-only">(current)</span></a>
+                        <a className="nav-link active textColor" href={"/Purchasepage"}>Orders<span className="sr-only">(current)</span></a>
                         <a className="nav-link active textColor" href={"/AboutUs"}>About<span className="sr-only">(current)</span></a>
-                        <a className="nav-link active textColor" href={"/Purchasepage"}>Purchasepage<span className="sr-only">(current)</span></a>
                         {adminLink}
                         <div className="container-fluid textColor text-right">
                             <img src={icon} style={{width:30, height:30}} className="align-top" alt=""/> {local.username + "  "}
