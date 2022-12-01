@@ -25,7 +25,9 @@ export default function Filter (props) {
                     <Dropdown.Divider/>
                     <Dropdown.Header>Item Type:</Dropdown.Header>
                     <Dropdown.Item id="shirt-search" onClick={props.showShirts}>Shirt</Dropdown.Item>
-                    <Dropdown.Item id="pants-search" onClick={props.showShoes}>Shoes</Dropdown.Item>
+                    <Dropdown.Item id="shoes-search" onClick={props.showShoes}>Shoes</Dropdown.Item>
+                    <Dropdown.Item id="pants-search" onClick={props.showPants}>Pants</Dropdown.Item>
+                    <Dropdown.Item id="socks-search" onClick={props.showSocks}>Socks</Dropdown.Item>
 
 
                 </Dropdown.Menu>
