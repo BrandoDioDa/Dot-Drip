@@ -13,6 +13,10 @@ export const getCheckoutByAccount = async (id) => {
     return await axios.get(`${apiUrl}/Checkouts/checkout/account/${id}`);
 }
 
+export const checkCart = async (id) => {
+    return await axios.get(`${apiUrl}/Checkouts/checkout/cart/${id}`);
+}
+
 export const createCheckout = async (itemObj) => {
     return await axios.post(`${apiUrl}/Checkouts/checkout/add`, itemObj);
 }

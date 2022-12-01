@@ -68,6 +68,7 @@ usersRouter.get('/auth/:username/:password', async (req, res) => {
         }
         else {
             console.log("nothing returned from Server");
+            return res.status(205).json();               //NULL is returned
         }
     } catch (error) {
         console.log("Error");

@@ -36,8 +36,8 @@ const Login =(props) => {
                     // TODO-Redirect to the page, store the information on the system?
                     navigateHome();
                 }
-                else if ( response.status === 204 ) { // Wrong password
-                    setContent(<p>Wrong password or email. Please check</p>);
+                else if ( response.status === 204  || response.status === 205) { // Wrong password
+                    setContent(<p>Wrong username or password.</p>);
                 }
                 else {                  // Other error
                     // Failed!
@@ -45,6 +45,7 @@ const Login =(props) => {
                 }
             })
             .catch(function(error) {
+                setContent(<p>Account is not found. Please try again.</p>)
                 console.log(error);
             });
         }

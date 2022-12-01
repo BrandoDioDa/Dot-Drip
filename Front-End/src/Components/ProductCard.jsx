@@ -1,7 +1,7 @@
 import { Card, Button } from 'react-bootstrap';
 import {Link, useNavigate} from "react-router-dom";
 import "../view/cssDesign/ProductCard.css"
-import {getCheckoutByAccount, editCheckout} from "../services/checkoutService";
+import {getCheckoutByAccount, editCheckout, checkCart} from "../services/checkoutService";
 import {getUserByUsername} from "../services/userService";
 import React, {useEffect, useState} from "react";
 
@@ -16,13 +16,18 @@ const ProductCard = ({ obj }) => {
         } else { //verify user and checkout data then add product to users cart
             const response = await getUserByUsername(verify.username);
             const cart = await getCheckoutByAccount(response.data._id);
-
-            if (cart.data.account === response.data._id) { //Verify user has a cart
+            const check = await checkCart(obj._id);
+            console.log(check.data);
+            if (cart.data.account === response.data._id) {//Verify user has a cart
+                //if(!cart.data.cart({ cart: [obj._id]})) {
                     await editCheckout({
                         $push: {
                             cart: obj._id
                         }
                     }, cart.data._id)
+               // }else{
+                    console.log("Cart already has this item");
+               // }
             } else {
                 console.log("User information does not match checkout");
             }
