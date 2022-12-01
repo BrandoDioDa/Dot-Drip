@@ -4,9 +4,9 @@ export default function Product(props) {
     const {product, onAdd} = props;
   return (
     <div>
-        <img className='small' src={product.image} alt={product.name}/>
-        <h3>{product.name}</h3>
-        <div>${product.price}</div>
+        <img className='small' src={product.prodImage} alt={product.prodName}/>
+        <h3>{product.prodName}</h3>
+        <div>${product.prodPrice}</div>
         <div>
             <button onClick={() => onAdd(product)}>Add To Cart</button>
         </div>

@@ -7,7 +7,6 @@ import {useEffect, useState} from 'react';
 import {getUserByUsername} from "../../services/userService";
 import {getCheckoutByAccount} from "../../services/checkoutService";
 import {getProductById} from "../../services/productsService";
-import ProductCard from "../../Components/ProductCard";
 
 
 const Cart =() => {
@@ -51,31 +50,19 @@ const Cart =() => {
         console.log(finalCart);
 
         for(let i = 0; i < finalCart.length; i++){
-            testing.push(await getProductById(finalCart.at(i)));
-            console.log(testing);
+            const what = await getProductById(finalCart.at(i))
+            testing.push(what.data);
         }
-        setProducts(testing);
-        console.log(product);
-        console.log(product);
+        setProducts(testing)
+        console.log(finalCart);
 
-
-        //await mapProduct();
-    }
-
-    async function mapProduct() {
-        {finalCart.map(async (data) => (
-            <div key={data.toString()}>
-                {setProducts(await getProductById(data))}
-            </div>
-        ))}
-        console.log(product);
     }
 
     return(
         <div className="BackgroundColor">
             <div className="container-fluid">
                 <div className="row">
-                    <Primary onAdd={onAdd} products={products}/>
+                    <Primary onAdd={onAdd} products={product}/>
                     <Basket onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/>
                 </div>
             </div>
