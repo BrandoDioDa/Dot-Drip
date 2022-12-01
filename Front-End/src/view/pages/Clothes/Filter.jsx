@@ -7,6 +7,7 @@ import "../../cssDesign/clothes.css";
 
 const Filter =() => {
     return (
+        <div className="container">
             <Dropdown size="normal" align="end" autoClose="inside">
                 <Dropdown.Toggle variant="success" id="dropdown-basic">Filter</Dropdown.Toggle>
                 <Dropdown.Menu>
@@ -36,7 +37,7 @@ const Filter =() => {
 
                 </Dropdown.Menu>
             </Dropdown>
-            
+        </div>
     );
 }
 
