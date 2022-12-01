@@ -1,14 +1,15 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
+import Product from "./Product";
 
 export default function Basket(props){
-    const {cartItems, onAdd, onRemove} = props;
-    const itemPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0);
+    const itemPrice = 0;
     const taxPrice = itemPrice * 0.14;
     const shippingPrice = itemPrice > 2000 ? 0 : 50;
-    var totalPrice = (itemPrice + taxPrice + shippingPrice);
+    let totalPrice = (itemPrice + taxPrice + shippingPrice);
 
+    const [data, setData] = useState([]);
     const [couponInput, setCouponInput] = useState(0);
     const [couponDiv, setCouponDiv] = useState('');
     const [currentCoupon, setCurrentCoupon] = useState({});
@@ -16,6 +17,8 @@ export default function Basket(props){
     useState(() => {
         setCurrentCoupon({name: '', amount: 0})
     })
+
+
 
     const applyCoupon = (e) => {
         e.preventDefault();
@@ -53,25 +56,9 @@ export default function Basket(props){
     return (
     <aside className="block col-3">
     <h2>Cart Items</h2>
-
-    <div>{cartItems.length === 0 && <div>Cart Is Empty</div>}</div>
-    {cartItems.map((item) => (
-        <div key={item.id} className="row">
-            <div>{item.name}</div>
-
-            <div>
-                <button onClick={() => onAdd(item)} className="add">+</button>
-                <button onClick={() => onRemove(item)} className="remove">-</button>
-            </div>
-
-            <div className='col-2 text-right'>
-                {item.qty} x ${item.price.toFixed(2)}
-
-            </div>
-        </div>
-    ))}
-    {cartItems.length !== 0 && (
-    <>
+        {props.map((item) => (
+            <div key = {item._id}> </div>
+        ))}
         <hr/>
             <div className='row'>
                 <div className='col-2'>Items Price</div>
@@ -95,7 +82,6 @@ export default function Basket(props){
             <input value={couponInput} onChange={(e) => setCouponInput(e.target.value)} type="username" placeholder="coupon"/>
             <button onClick={applyCoupon}>Check</button>
             {couponDiv}
-    </>
     )}
     </aside>
 );

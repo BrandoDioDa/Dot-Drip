@@ -1,16 +1,17 @@
 import React from 'react'
-
+import "../view/cssDesign/cart.css"
 export default function Product(props) {
     const {product, onAdd} = props;
   return (
     <div>
-        <img className='small' src={product.prodImage} alt={product.prodName}/>
-        <h3>{product.prodName}</h3>
-        <div>${product.prodPrice}</div>
-        <div>
-            <button onClick={() => onAdd(product)}>Add To Cart</button>
+        <div className="container">
+            <img className='small' src={product.prodImage} alt={product.prodName}/>
         </div>
-
+        <div className="px-5">
+            <h3>
+                {product.prodName} : {product.prodPrice}
+            </h3>
+        </div>
     </div>
   )
 }
