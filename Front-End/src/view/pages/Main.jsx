@@ -4,10 +4,14 @@ import {Button} from "react-bootstrap";
 import "../cssDesign/main.css"
 
 const Main =() => {
-    const user = "";
-    let name = user.name;
-    if(name==null)
+    let local = localStorage.getItem('userData');
+    var name;
+    if ( local === 'null' || local === null || local == 'undefined') {
         name = "Guest";
+    }
+    else {
+        name = (JSON.parse(local)).username;
+    }
 
     return(
         <div className="BackgroundColor">
