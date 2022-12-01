@@ -6,12 +6,17 @@ import data from '../../data'
 import {useEffect, useState} from 'react';
 import {getUserByUsername} from "../../services/userService";
 import {getCheckoutByAccount} from "../../services/checkoutService";
+import {getProductById} from "../../services/productsService";
+import ProductCard from "../../Components/ProductCard";
 
 
 const Cart =() => {
     const verify = JSON.parse(localStorage.getItem('userData'));
     const {products} = data;
+    const testing = [];
+    const [product, setProducts] = useState([]);
     const [cartItems, setCartItems] = useState([]);
+    const [finalCart, setFinalCart] = useState([]);
     const onAdd = (product) => {
         const exist = cartItems.find(x => x.id === product.id);
         if(exist){
@@ -41,8 +46,29 @@ const Cart =() => {
     async function getCart() {
         const user = await getUserByUsername(verify.username);
         const cart = await getCheckoutByAccount(user.data._id);
-        console.log(user.data);
-        console.log(cart.data);
+        console.log(cart.data.cart);
+        setFinalCart(cart.data.cart);
+        console.log(finalCart);
+
+        for(let i = 0; i < finalCart.length; i++){
+            testing.push(await getProductById(finalCart.at(i)));
+            console.log(testing);
+        }
+        setProducts(testing);
+        console.log(product);
+        console.log(product);
+
+
+        //await mapProduct();
+    }
+
+    async function mapProduct() {
+        {finalCart.map(async (data) => (
+            <div key={data.toString()}>
+                {setProducts(await getProductById(data))}
+            </div>
+        ))}
+        console.log(product);
     }
 
     return(

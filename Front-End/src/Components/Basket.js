@@ -29,7 +29,7 @@ export default function Basket(props){
                 console.log(response);
                 if ( response.status === 200 ) { // Found a thing
                     console.log(response.data.discountAmount);
-                    if ( currentCoupon != response.data.codeName ) {
+                    if ( currentCoupon !== response.data.codeName ) {
                         setCurrentCoupon({name: response.data.codeName, amount: response.data.discountAmount});
                     }
                     else {
