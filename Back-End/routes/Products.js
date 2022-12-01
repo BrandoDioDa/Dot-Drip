@@ -33,6 +33,16 @@ expressRouter.post('/add', async (req, res) => {
     }
 })
 
+expressRouter.put("/add/:id", async (req, res) => {
+    const { id } = req.params;
+    const productToUpdate = await product.findByIdAndUpdate(id, req.body, {new: true});
+    try {
+        return res.status(202).json(productToUpdate);
+    } catch (error) {
+        return res.status(500).json({message: "Can't update checkout id"})
+    }
+});
+
 //DELETE by product id
 expressRouter.delete('/delete/:id', async (req, res) => {
     const { id } = req.params;

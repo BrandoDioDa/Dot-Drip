@@ -51,9 +51,6 @@ const Signin = (props) => {
                         createCheckout({
                             account: response.data._id,
                             date: Date.now(),
-                            cart: {
-
-                            },
                             shippingInfo: {
                                 firstname: 'def',
                                 lastname: 'def',

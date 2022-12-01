@@ -21,6 +21,7 @@ export const deleteProduct = async (id) => {
     return await axios.get(`${apiUrl}/Products/`);
 }
 
-export const getUserById = async (id) => {
-    return await axios.get(`${apiUrl}/Products/users/${id}`);
+export const getProductsFromQuery = async (jsonQuery) => {
+    console.log(jsonQuery);
+    return await axios.get(`${apiUrl}/Products/query/${jsonQuery}`);
 }

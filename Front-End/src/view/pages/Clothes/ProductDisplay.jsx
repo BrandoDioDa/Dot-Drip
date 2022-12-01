@@ -3,21 +3,13 @@ import {getAllProducts, getProductById} from "../../../services/productsService"
 import "../../cssDesign/clothes.css"
 import ProductCard from "../../../Components/ProductCard";
 
-const ProductDisplay =() => {
+const ProductDisplay = ({products}) => {
     //Create useEffect to obtain product information from backend when page begins rendering
     //Service call to backend to request all products from DB
     //Middleman to collect items into local variable
     //Map listed contents
-    const [products, setProducts] = useState([]);
 
-    useEffect(() => {
-        getProducts();
-    }, []);
-
-    async function getProducts() {
-        const response = await getAllProducts();
-        setProducts(response.data);
-    }
+    console.log(this);
 
     return(
         <div className="container">
