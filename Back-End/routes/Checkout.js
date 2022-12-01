@@ -37,6 +37,18 @@ checkoutRouter.get('/checkout/account/:id', async (req, res) => {
     }
 })
 
+//Find matching productID
+checkoutRouter.get('/checkout/cart/:id', async (req, res) => {
+    const { id } = req.params;
+    const singleEntry = await checkout.findById(id);
+    console.log(singleEntry);
+    try {
+        return res.status(200).json(singleEntry)
+    } catch (error) {
+        return res.status(500).json({message: "Unable to get purchase"});
+    }
+})
+
 //ADDS a product to the database
 checkoutRouter.post('/checkout/add', async (req, res) => {
     const createCheck = await checkout.create(req.body);
