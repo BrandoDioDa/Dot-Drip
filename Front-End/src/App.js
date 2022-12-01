@@ -9,6 +9,7 @@ import AboutUs from "./view/pages/AboutUs";
 import SignUp from "./view/pages/Signup";
 import Admin from "./view/pages/Admin"
 import Coupon from "./view/pages/Coupon"
+import Purchasepage from "./view/pages/Purchasepage"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import {FooterContainer} from "./containers/footer";
 
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/SignUp" element={<SignUp/>} />
                 <Route path="/AboutUs" element={<AboutUs/>} />
                 <Route path="/Coupon" element={<Coupon/>} />
+                <Route path="/Purchasepage" element={<Purchasepage/>} />
                 <Route path="*" element={<NotFound/>} />
             </Routes>
             <FooterContainer/>
