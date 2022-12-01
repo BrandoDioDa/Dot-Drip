@@ -21,7 +21,7 @@ const NavBar =() => {
         navigateHome();
     }
 
-    if ( local != 'null' && local != null && local != 'undefined') {
+    if ( local !== 'null' && local != null && local !== 'undefined') {
         local = JSON.parse(local);
         if ( local.role === "ADMIN" ) {
             icon = adminicon;

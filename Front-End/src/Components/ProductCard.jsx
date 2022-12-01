@@ -22,7 +22,8 @@ const ProductCard = ({ obj }) => {
                 //if(!cart.data.cart({ cart: [obj._id]})) {
                     await editCheckout({
                         $push: {
-                            cart: obj._id
+                            cart: obj._id,
+                            quan: 1
                         }
                     }, cart.data._id)
                // }else{
@@ -31,7 +32,7 @@ const ProductCard = ({ obj }) => {
             } else {
                 console.log("User information does not match checkout");
             }
-            console.log(cart.data.cart);
+            console.log(cart.data.quan);
         }
     }
     const dynamicButton = <Button className="m-2 btn-success" onClick={handleClick}>To Cart</Button>;

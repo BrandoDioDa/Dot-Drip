@@ -56,15 +56,15 @@ const Login =(props) => {
             <div className="auth-form-conatiner">
         <form className="Login-form" onSubmit={handleSubmit}>
 
-                <label for="Username">Username</label>
+                <label htmlFor="Username">Username</label>
                 <input value={user} onChange={(e) => Username(e.target.value)} type="username" placeholder="username" id="username" name="username" />
 
-                <label for="password">Password</label>
+                <label htmlFor="password">Password</label>
                 <input value={password} onChange={(e) => setPass(e.target.value)} type="password" placeholder="**********" id="password" name="password"/>
                 <button type="submit">Log in</button>
         </form>
         {content}
-            <Link to={"/Signin"}>
+            <Link to={"/SignUp"}>
                 <button className="link-btn">Don't have an account? Sign in Here.</button>
             </Link>
         </div>

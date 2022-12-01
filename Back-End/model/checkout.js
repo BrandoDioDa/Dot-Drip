@@ -17,6 +17,10 @@ const checkoutSchema = Schema ({
             {
               type: Schema.Types.ObjectId,
               ref: "prodLists"
+            },
+            {
+                quan: Number,
+                default: 0,
             }
         ]
     },
