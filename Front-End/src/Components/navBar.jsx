@@ -42,6 +42,7 @@ const NavBar =() => {
                         <a className="nav-link active textColor" href={"/Clothes"}>Products<span className="sr-only">(current)</span></a>
                         <a className="nav-link active textColor" href={"/Cart"}>Cart<span className="sr-only">(current)</span></a>
                         <a className="nav-link active textColor" href={"/AboutUs"}>About<span className="sr-only">(current)</span></a>
+                        <a className="nav-link active textColor" href={"/Purchasepage"}>Purchasepage<span className="sr-only">(current)</span></a>
                         {adminLink}
                         <div className="container-fluid textColor text-right">
                             <img src={icon} style={{width:30, height:30}} className="align-top" alt=""/> {local.username + "  "}
@@ -68,6 +69,8 @@ const NavBar =() => {
                     <a className="nav-link active textColor" href={"/Clothes"}>Products<span className="sr-only">(current)</span></a>
                     <a className="nav-link active textColor" href={"/Cart"}>Cart<span className="sr-only">(current)</span></a>
                     <a className="nav-link active textColor" href={"/AboutUs"}>About<span className="sr-only">(current)</span></a>
+                    <a className="nav-link active textColor" href={"/Purchasepage"}>Purchasepage<span className="sr-only">(current)</span></a>
+
                     <form className="container-fluid  text-right">
                         <Link to="/SignUp" className="px-3"><button className="btn btn-outline-secondary my-2 my-sm-0"  type="button" placeholder="Login">Sign-up</button></Link>
                         <Link to={"/Login"}><button className="btn btn-outline-success my-2 my-sm-0" type="button" placeholder="Login">Log-in</button></Link>
