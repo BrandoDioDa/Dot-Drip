@@ -5,7 +5,6 @@ const product = require('../model/products');
 //Get all items
 expressRouter.get('/', async (req, res) => {
     const product1 = await product.find();
-    console.log(product1);
     try {
         return res.status(200).json(product1)
     } catch (error) {
@@ -45,3 +44,13 @@ expressRouter.delete('/delete/:id', async (req, res) => {
     }
 })
 module.exports = expressRouter;
+
+//GET from query provided through req.body
+expressRouter.get('/query/:q', async (req, res) => {
+    const product1 = await product.find(JSON.parse(req.params.q));
+    try {
+        return res.status(201).json(product1);
+    } catch (error) {
+        return res.status(500).json();
+    }
+})

@@ -1,9 +1,10 @@
 import "../cssDesign/shoppingcart.css"
+import "../cssDesign/clothes.css"
 import Basket from "../../Components/Basket";
-import Header from "../../Components/Header";
 import Primary from "../../Components/Primary";
 import data from '../../data'
 import {useState} from 'react';
+
 
 const Cart =() => {
     const {products} = data;
@@ -30,18 +31,14 @@ const Cart =() => {
         }
     };
     return(
-        <div>
-<div>
-<Header countCartItems={cartItems.length}></Header>
-</div>
-
-<div className="container">
-<div className="row">
-<Primary onAdd={onAdd} products={products}></Primary>
-<Basket onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}></Basket>
-</div>
-</div>
-</div>
+        <div className="BackgroundColor">
+            <div className="container-fluid">
+                <div className="row">
+                    <Primary onAdd={onAdd} products={products}/>
+                    <Basket onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/>
+                </div>
+            </div>
+        </div>
     );
 }
 export default Cart;

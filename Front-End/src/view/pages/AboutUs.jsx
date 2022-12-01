@@ -1,11 +1,11 @@
 import {Link} from "react-router-dom";
-import "../cssDesign/main.css";
+import "../cssDesign/clothes.css";
 
 
 const AboutUs =() =>
 {
     return(
-        <div className="Bcolor">
+        <div className="BackgroundColor">
             <h1>
                 Who are we? /* text goes here */
             </h1>
