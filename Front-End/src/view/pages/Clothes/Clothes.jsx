@@ -45,6 +45,28 @@ export default function Clothes(){
         }
     }
 
+    async function showSocks() {
+        await unshowItem();
+        try {
+            const response = await getProductsFromQuery(JSON.stringify({prodType: "Socks"}));
+            setProducts(response.data);
+        }
+        catch {
+            console.log("error happened");
+        }
+    }
+
+    async function showPants() {
+        await unshowItem();
+        try {
+            const response = await getProductsFromQuery(JSON.stringify({prodType: "Pants"}));
+            setProducts(response.data);
+        }
+        catch {
+            console.log("error happened");
+        }
+    }
+
     async function sortByQuantityAsc() {
         await unshowItem();
         const sorted = products.sort((a, b) => (a.prodQuan > b.prodQuan) ? 1 : -1);
@@ -95,6 +117,8 @@ export default function Clothes(){
                 search = {search}
                 showShirts = {showShirts}
                 showShoes = {showShoes}
+                showPants = {showPants}
+                showSocks = {showSocks}
                 sortByQuantityAsc = {sortByQuantityAsc}
                 sortByQuantityDesc = {sortByQuantityDesc}
                 sortByPriceAsc = {sortByPriceAsc}
