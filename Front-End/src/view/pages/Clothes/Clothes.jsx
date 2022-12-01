@@ -10,6 +10,7 @@ export default function Clothes(){
 
     const [products, setProducts] = useState([]);
     const [allProducts, setAllProducts] = useState([]);
+    //const [search, setSearch] = useState('');
 
     useEffect(() => {
         getProducts();
@@ -22,6 +23,7 @@ export default function Clothes(){
     }
 
     async function showShirts() {
+        await unshowItem();
         console.log("Showing shirts");
         try {
             const response = await getProductsFromQuery(JSON.stringify({prodType: "shirt"}));
@@ -33,6 +35,7 @@ export default function Clothes(){
     }
 
     async function showShoes() {
+        await unshowItem();
         try {
             const response = await getProductsFromQuery(JSON.stringify({prodType: "shoe"}));
             setProducts(response.data);
@@ -42,32 +45,28 @@ export default function Clothes(){
         }
     }
 
-    async function sortByQuantity(type) {
-        if ( type === "ASCENDING" ) {
-            const sorted = products.sort((a, b) => (a.prodQuan > b.prodQuan) ? 1 : -1);
-            setProducts( sorted.map((item) => item) );
-        }
-        else if ( type === "DESCENDING" ) {
-            const sorted = products.sort((a, b) => (a.prodQuan > b.prodQuan) ? -1 : 1);
-            setProducts( sorted.map((item) => item) );
-        }
-        else {
-            console.log("Unknown type on sortByQuantity. Please check your call!");
-        }
+    async function sortByQuantityAsc() {
+        await unshowItem();
+        const sorted = products.sort((a, b) => (a.prodQuan > b.prodQuan) ? 1 : -1);
+        setProducts( sorted.map((item) => item) );
     }
 
-    async function sortByPrice(type) {
-        if ( type === "ASCENDING" ) {
-            const sorted = products.sort((a, b) => (Number(a.prodPrice.replace(/[^0-9.-]+/g,"")) > Number(b.prodPrice.replace(/[^0-9.-]+/g,""))) ? 1 : -1);
-            setProducts( sorted.map((item) => item) );
-        }
-        else if ( type === "DESCENDING" ) {
-            const sorted = products.sort((a, b) => (Number(a.prodPrice.replace(/[^0-9.-]+/g,"")) > Number(b.prodPrice.replace(/[^0-9.-]+/g,""))) ? -1 : 1);
-            setProducts( sorted.map((item) => item) );
-        }
-        else {
-            console.log("Unknown type on sortByPrice. Please check your call!");
-        }
+    async function sortByQuantityDesc() {
+        await unshowItem();
+        const sorted = products.sort((a, b) => (a.prodQuan > b.prodQuan) ? -1 : 1);
+        setProducts( sorted.map((item) => item) );
+    }
+
+    async function sortByPriceAsc() {
+        await unshowItem();
+        const sorted = products.sort((a, b) => (Number(a.prodPrice.replace(/[^0-9.-]+/g,"")) > Number(b.prodPrice.replace(/[^0-9.-]+/g,""))) ? 1 : -1);
+        setProducts( sorted.map((item) => item) );
+    }
+
+    async function sortByPriceDesc() {
+        await unshowItem();
+        const sorted = products.sort((a, b) => (Number(a.prodPrice.replace(/[^0-9.-]+/g,"")) > Number(b.prodPrice.replace(/[^0-9.-]+/g,""))) ? -1 : 1);
+        setProducts( sorted.map((item) => item) );
     }
 
     async function unshowItem() {
@@ -75,44 +74,17 @@ export default function Clothes(){
         setProducts( response.data );
     }
 
-    function unCheck() {
-        var x = document.getElementsByClassName("btn-check");
-        console.log(x);
-        for(var i=0; i<=x.length; i++) {
-            if ( x[i].checked != null ) { 
-                x[i].checked = false;
-            }
-        }   
-        unshowItem();
-      }
-
-    const updateCheck = (e) => {
-        const id = e.target.id;
-        if (e.target.checked) {
-            if ( id == "shirt-check" ) {
-                showShirts().then();
-            }
-            else if ( id == "shoes-check" ) {
-                showShoes().then();
-            }
-            else if ( id === "quantity-sort-asc" ) {
-                sortByQuantity("ASCENDING").then();
-            }
-            else if ( id === "quantity-sort-des" ) {
-                sortByQuantity("DESCENDING").then();
-            }
-            else if ( id === "price-sort-asc" ) {
-                sortByPrice("ASCENDING");
-            }
-            else if ( id === "price-sort-des" ) {
-                sortByPrice("DESCENDING");
-            }
-            else {
-                console.log("Error: ID Not found!");
-            }
+    async function search(e) {
+        console.log(e.target.value);
+        //setSearch(value);
+        //const response = await getProductsFromQuery(JSON.stringify({ $text: { $search: (e.target.value) } }));
+        const response = await getProductsFromQuery(JSON.stringify({ prodName: { $regex: e.target.value } }));
+        console.log(response);
+        if ( response.data.length == 0 ) {
+            getProducts()        
         }
         else {
-            unshowItem();
+            setProducts( response.data );
         }
     }
 
@@ -120,14 +92,13 @@ export default function Clothes(){
         <div className="BackgroundColor">
             <ClothesHeader/>
             <Filter 
+                search = {search}
                 showShirts = {showShirts}
                 showShoes = {showShoes}
-                sortByQuantity ={(type) => {
-                    sortByQuantity(type);
-                }}
-                sortByPrice ={(type) => {
-                    sortByPrice(type);
-                }}
+                sortByQuantityAsc = {sortByQuantityAsc}
+                sortByQuantityDesc = {sortByQuantityDesc}
+                sortByPriceAsc = {sortByPriceAsc}
+                sortByPriceDesc = {sortByPriceDesc}
                 unshowItem = {unshowItem}
             />
             <ProductDisplay products={products}/>

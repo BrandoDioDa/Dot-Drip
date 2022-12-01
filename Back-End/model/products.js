@@ -5,11 +5,12 @@ const { model, Schema } = mongoose;
 const prodList = Schema ({
     prodType: {
         type: String,
-        required: true
+        required: true,
     },
     prodName: {
         type: String,
-        required: true
+        required: true,
+        text: true
     },
     prodPrice: {
         type: String,

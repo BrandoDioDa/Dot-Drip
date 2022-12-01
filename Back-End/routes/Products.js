@@ -47,6 +47,7 @@ module.exports = expressRouter;
 
 //GET from query provided through req.body
 expressRouter.get('/query/:q', async (req, res) => {
+    console.log(JSON.parse(req.params.q));
     const product1 = await product.find(JSON.parse(req.params.q));
     try {
         return res.status(201).json(product1);

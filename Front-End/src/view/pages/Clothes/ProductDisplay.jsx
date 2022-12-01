@@ -14,13 +14,6 @@ const ProductDisplay = ({products}) => {
 
     return(
         <div className="container">
-            {/* <input type="checkbox" onClick={updateCheck} className="btn-check" id="shirt-check" autoComplete="off" />Show Shirts<br></br>
-            <input type="checkbox" onClick={updateCheck} className="btn-check" id="shoes-check" autoComplete="off" />Show Shoes<br></br>
-            <input type="checkbox" onClick={updateCheck} className="btn-check" id="quantity-sort-asc" autoComplete="off" />Sort by Quantity ASC<br></br>
-            <input type="checkbox" onClick={updateCheck} className="btn-check" id="quantity-sort-des" autoComplete="off" />Sort by Quantity DES<br></br>
-            <input type="checkbox" onClick={updateCheck} className="btn-check" id="price-sort-asc" autoComplete="off" />Sort by Price ASC<br></br>
-            <input type="checkbox" onClick={updateCheck} className="btn-check" id="price-sort-des" autoComplete="off" />Sort by Price DES<br></br>
-            <input type="checkbox" onClick={unCheck} className="btn-check" id="price-sort-des" autoComplete="off" />UNcheck all<br></br> */}
 
             <div className="row">
                 {products.map((product) => (
