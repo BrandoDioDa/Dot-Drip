@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="Card component created | commented out clothes page | developing main | created ProductCard.css">
-      <change afterPath="$PROJECT_DIR$/Front-End/src/Components/deleteItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/cssDesign/ProductCard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front-End/src/view/images/deleteIcon.png" afterDir="false" />
+    <list default="true" id="bb85778a-cac5-4d29-8c59-53abe4f8d8c9" name="Changes" comment="Updated Navbar">
+      <change afterPath="$PROJECT_DIR$/Front-End/src/Components/footer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front-End/src/Components/footer/styles/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front-End/src/containers/footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/Components/ProductCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/Components/ProductCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/view/cssDesign/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/cssDesign/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Clothes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Clothes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front-End/src/view/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/view/pages/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front-End/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +43,19 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="38-create-filter-button" />
+        <entry key="$PROJECT_DIR$" value="local-storage-user" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
@@ -62,29 +69,25 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2EjhSEteSQpSGifaCwyNug8t4MF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="mongo" />
-    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Coding Projects\Personal_Labs\Dot-Drip\Front-End\src" />
@@ -125,6 +128,8 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start (1)" />
+        <item itemvalue="npm.start (1)" />
         <item itemvalue="npm.start (1)" />
         <item itemvalue="npm.start (1)" />
       </list>
@@ -190,7 +195,22 @@
       <workItem from="1669004168307" duration="907000" />
       <workItem from="1669140571474" duration="29196000" />
       <workItem from="1669188993782" duration="26000" />
-      <workItem from="1669237328396" duration="679000" />
+      <workItem from="1669237328396" duration="6086000" />
+      <workItem from="1669257317277" duration="11433000" />
+      <workItem from="1669315214919" duration="2441000" />
+      <workItem from="1669401321242" duration="6796000" />
+      <workItem from="1669532514672" duration="394000" />
+      <workItem from="1669533428038" duration="882000" />
+      <workItem from="1669572064164" duration="4823000" />
+      <workItem from="1669603123224" duration="1201000" />
+      <workItem from="1669616671361" duration="59000" />
+      <workItem from="1669653929907" duration="21473000" />
+      <workItem from="1669690901956" duration="83000" />
+      <workItem from="1669690999589" duration="562000" />
+      <workItem from="1669691577863" duration="4332000" />
+      <workItem from="1669707373249" duration="8204000" />
+      <workItem from="1669756461626" duration="27000" />
+      <workItem from="1669756504147" duration="1525000" />
     </task>
     <task id="LOCAL-00001" summary="messagwe">
       <created>1663115835095</created>
@@ -409,7 +429,28 @@
       <option name="project" value="LOCAL" />
       <updated>1669170434327</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Card component created | commented out clothes page | developing main | created ProductCard.css">
+      <created>1669238015489</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1669238015489</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Updated users.js">
+      <created>1669573247116</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1669573247116</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Updated Navbar">
+      <created>1669673067087</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1669673067087</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,8 +468,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="message" />
-    <MESSAGE value="Installed react-router-dom | changed app.js to allow routing to different pages | created directories to hold content for front-end | created shopping cart and main menu page" />
     <MESSAGE value="Installed react-router-dom | changed app.js to allow routing to different pages | created directories to hold content for front-end | created shopping cart and main menu page | added NotFound.jsx" />
     <MESSAGE value="Each page has an actual heading | Button on shopping cart page is created and works | css file styles the button" />
     <MESSAGE value="Added bootstrap dependency" />
@@ -452,21 +491,8 @@
     <MESSAGE value="BIG CHANGES | Dropdowns now work properly, make sure you install the new libraries in index.html | productsService.js can be exported to use any of it's functions to change the products DB" />
     <MESSAGE value="Installed react-bootstrap | updated userServer.js | Fixed Login.jsx" />
     <MESSAGE value="Card component created | commented out clothes page | developing main | created ProductCard.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Card component created | commented out clothes page | developing main | created ProductCard.css" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/Back-End/model/users.js</url>
-          <line>27</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/Front-End/src/view/pages/Admin.jsx</url>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Updated users.js" />
+    <MESSAGE value="Updated Navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Navbar" />
   </component>
 </project>

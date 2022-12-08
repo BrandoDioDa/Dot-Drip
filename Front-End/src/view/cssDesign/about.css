@@ -1,3 +1,18 @@
 .about {
     text-align: center;
 }
+
+h1a{
+    font-size: xx-large;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+h2{
+    font-size: large;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+h3{
+    font-size: medium;
+    font-family: "Lucida Console", "Courier New", monospace;
+}

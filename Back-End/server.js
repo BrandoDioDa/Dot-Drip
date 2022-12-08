@@ -16,15 +16,16 @@ mongoose
 mongoose.Promise = global.Promise;
 
 //app.use(express.json());
+app.use(express.json());
 
 app.use("/api/Products", require("./routes/Products"));
 app.use("/api/Checkouts", require("./routes/Checkout"));
 app.use("/api/Users", require("./routes/Users"));
-
+app.use("/api/Coupons", require("./routes/Coupons"));
 
 
 app.use((err, req, res, next) => {
-    console.log(err);
+    console.log(err); 
     next();
 })
 

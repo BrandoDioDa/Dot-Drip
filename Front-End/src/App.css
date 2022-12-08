@@ -18,7 +18,10 @@ flex-direction: column;
   
 label{
 text-align: left;
-padding: 0.25rem 0;
+font-size: large;
+font-weight:500;
+position:relative;
+top: 10px;
 }
 
 input{

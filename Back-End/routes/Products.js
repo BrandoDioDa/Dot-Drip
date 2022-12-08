@@ -5,7 +5,6 @@ const product = require('../model/products');
 //Get all items
 expressRouter.get('/', async (req, res) => {
     const product1 = await product.find();
-    console.log(product1);
     try {
         return res.status(200).json(product1)
     } catch (error) {
@@ -34,6 +33,16 @@ expressRouter.post('/add', async (req, res) => {
     }
 })
 
+expressRouter.put("/add/:id", async (req, res) => {
+    const { id } = req.params;
+    const productToUpdate = await product.findByIdAndUpdate(id, req.body, {new: true});
+    try {
+        return res.status(202).json(productToUpdate);
+    } catch (error) {
+        return res.status(500).json({message: "Can't update checkout id"})
+    }
+});
+
 //DELETE by product id
 expressRouter.delete('/delete/:id', async (req, res) => {
     const { id } = req.params;
@@ -44,4 +53,16 @@ expressRouter.delete('/delete/:id', async (req, res) => {
         return res.status(500).json({message: "Unable to delete product"});
     }
 })
+
+//GET from query provided through req.body
+expressRouter.get('/query/:q', async (req, res) => {
+    console.log(JSON.parse(req.params.q));
+    const product1 = await product.find(JSON.parse(req.params.q));
+    try {
+        return res.status(201).json(product1);
+    } catch (error) {
+        return res.status(500).json();
+    }
+})
+
 module.exports = expressRouter;

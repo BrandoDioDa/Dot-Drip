@@ -10,61 +10,71 @@ const checkoutSchema = Schema ({
     },
     date: { //Date purchase was made
         type: Date,
-        default: null
+        default: ""
     },
     cart: {
         type: [
             {
               type: Schema.Types.ObjectId,
-              ref: "prodTypes"
+              ref: "prodLists"
             }
         ]
     },
     shippingInfo: { //Shipping info when checking out
         firstname: {
             type: String,
-            required: true
+            required: true,
+            default: ""
         },
         lastname: {
             type: String,
-            required: true
+            required: true,
+            default: ""
         },
         city: {
             type: String,
-            required: true
+            required: true,
+            default: ""
         },
         state: {
             type: String,
-            required: true
+            required: true,
+            default: ""
         },
         zipcode: {
             type: String,
-            required: true
+            required: true,
+            default: ""
         },
     },
     payment: {
         type:{
             type: String,
-            required: true
+            required: true,
+            default: ""
         },
         cardNum: {
             type: String,
-            required: true
+            required: true,
+            default: ""
         },
         nameOnCard: {
             type: String
         },
         securityNum: {
             type: String,
-            required: true
+            required: true,
+            default: ""
         },
         expDate: {
             type: String,
-            required: true
+            required: true,
+            default: ""
         },
         amount: {
             type: Number,
-            required: true
+            required: true,
+            default: ""
         }
     }
 });

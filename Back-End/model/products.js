@@ -26,6 +26,10 @@ const prodList = Schema ({
     prodImage: {
         type: String,
         required: true
+    },
+    inCart: {
+        type: Number,
+        required: true
     }
 });
 
